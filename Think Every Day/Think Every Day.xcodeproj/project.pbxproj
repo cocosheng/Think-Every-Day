@@ -15,6 +15,8 @@
 		8A7878B01D94752F0062EF79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7878AE1D94752F0062EF79 /* LaunchScreen.storyboard */; };
 		8A7878BB1D94752F0062EF79 /* Think_Every_DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878BA1D94752F0062EF79 /* Think_Every_DayTests.swift */; };
 		8A7878C61D94752F0062EF79 /* Think_Every_DayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878C51D94752F0062EF79 /* Think_Every_DayUITests.swift */; };
+		CE6469521DA193EC00D03D26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6469511DA193EC00D03D26 /* ViewController.swift */; };
+		CE92E8531DA1895D00ED3EAE /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92E8521DA1895D00ED3EAE /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		8A7878C11D94752F0062EF79 /* Think Every DayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Think Every DayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7878C51D94752F0062EF79 /* Think_Every_DayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Think_Every_DayUITests.swift; sourceTree = "<group>"; };
 		8A7878C71D94752F0062EF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE6469511DA193EC00D03D26 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE92E8521DA1895D00ED3EAE /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				8A7878A31D94752F0062EF79 /* AppDelegate.swift */,
 				8A7878A51D94752F0062EF79 /* FirstViewController.swift */,
 				8A7878A71D94752F0062EF79 /* SecondViewController.swift */,
+				CE6469511DA193EC00D03D26 /* ViewController.swift */,
+				CE92E8521DA1895D00ED3EAE /* Utilities.swift */,
 				8A7878A91D94752F0062EF79 /* Main.storyboard */,
 				8A7878AC1D94752F0062EF79 /* Assets.xcassets */,
 				8A7878AE1D94752F0062EF79 /* LaunchScreen.storyboard */,
@@ -264,8 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6469521DA193EC00D03D26 /* ViewController.swift in Sources */,
 				8A7878A81D94752F0062EF79 /* SecondViewController.swift in Sources */,
 				8A7878A41D94752F0062EF79 /* AppDelegate.swift in Sources */,
+				CE92E8531DA1895D00ED3EAE /* Utilities.swift in Sources */,
 				8A7878A61D94752F0062EF79 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,6 +523,7 @@
 				8A7878CC1D94752F0062EF79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A7878CD1D94752F0062EF79 /* Build configuration list for PBXNativeTarget "Think Every DayTests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +532,7 @@
 				8A7878CF1D94752F0062EF79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A7878D01D94752F0062EF79 /* Build configuration list for PBXNativeTarget "Think Every DayUITests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +541,7 @@
 				8A7878D21D94752F0062EF79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
