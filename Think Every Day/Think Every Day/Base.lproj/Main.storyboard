@@ -9,7 +9,7 @@
         <!--First-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Think_Every_Day" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="TodayQuestionViewController" customModule="Think_Every_Day" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -42,12 +42,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2804" y="-323"/>
+            <point key="canvasLocation" x="3114" y="-323"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Think_Every_Day" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="DiscoveryViewController" customModule="Think_Every_Day" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -80,12 +80,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2769" y="380"/>
+            <point key="canvasLocation" x="3113" y="408"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Tsa-x5-Bah">
+            <objects>
+                <viewController id="pvL-jF-fww" customClass="NotificationViewController" customModule="Think_Every_Day" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PGK-9j-CON"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vzd-v5-7YG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YnP-OC-Ehc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="hHe-xA-KrP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T0k-Lt-Z4x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3113" y="1146"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="rKP-Bi-Xdx">
+            <objects>
+                <viewController id="A8g-ID-4hg" customClass="AccountViewController" customModule="Think_Every_Day" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nju-uT-j2d"/>
+                        <viewControllerLayoutGuide type="bottom" id="wF3-Ej-LQs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cTd-7P-saf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="dmm-gD-v3s"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rET-eR-RgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3113" y="1865"/>
         </scene>
         <!--Forget Password-->
         <scene sceneID="J3A-SO-jua">
             <objects>
-                <viewController title="Forget Password" id="zRO-aJ-HAm" sceneMemberID="viewController">
+                <viewController title="Forget Password" id="zRO-aJ-HAm" customClass="ForgotPasswordViewController" customModule="Think_Every_Day" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H27-lx-aNw"/>
                         <viewControllerLayoutGuide type="bottom" id="3BM-Jn-VSK"/>
@@ -94,25 +132,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="forget password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Arv-mF-6eG">
-                                <frame key="frameInset" minX="69" minY="321" width="222" height="69"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I forgot my password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfF-rQ-Agd">
+                                <frame key="frameInset" minX="107" minY="112" width="161" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fr-X1-wRA">
+                                <frame key="frameInset" minX="125" minY="450" width="125" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="I have an account."/>
+                                <connections>
+                                    <segue destination="KRh-Oy-coG" kind="presentation" identifier="forgotPasswordSignIn" id="CkQ-Fu-mbO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJK-dy-KAX">
+                                <frame key="frameInset" minX="125" minY="257" width="108" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="KcA-AF-R2b" userLabel="UsernameInput">
+                                <frame key="frameInset" minX="114" minY="219" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhd-Nn-uKF">
+                                <frame key="frameInset" minX="120" minY="318" width="134" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset my password"/>
+                                <connections>
+                                    <segue destination="KRh-Oy-coG" kind="presentation" identifier="forgotPasswordResetSignIn" id="h91-5Y-dao"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9jE-sF-nxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="996" y="794"/>
+            <point key="canvasLocation" x="166" y="752"/>
         </scene>
         <!--Sign In-->
         <scene sceneID="2ZC-oc-YDO">
             <objects>
-                <viewController title="Sign In" id="KRh-Oy-coG" sceneMemberID="viewController">
+                <viewController title="Sign In" id="KRh-Oy-coG" customClass="SignInViewController" customModule="Think_Every_Day" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XmP-E5-xaN"/>
                         <viewControllerLayoutGuide type="bottom" id="Q4T-8U-3TN"/>
@@ -173,19 +241,26 @@
                                 <frame key="frameInset" minX="164" minY="425" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <action selector="SignInButtonTapped:" destination="KRh-Oy-coG" eventType="touchDown" id="NBU-aw-yd9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="PasswordSignInTextField" destination="XpT-9a-bRh" id="1nS-3L-kZA"/>
+                        <outlet property="UsernameSignInTextField" destination="dV6-bN-kK5" id="V90-cJ-H4D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bED-d2-OFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="958" y="27"/>
+            <point key="canvasLocation" x="1177" y="752"/>
         </scene>
         <!--sign up-->
         <scene sceneID="tYR-hp-lun">
             <objects>
-                <viewController title="sign up" id="bt7-v7-L3W" sceneMemberID="viewController">
+                <viewController title="sign up" id="bt7-v7-L3W" customClass="SignUpViewController" customModule="Think_Every_Day" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bNd-bC-Rcd"/>
                         <viewControllerLayoutGuide type="bottom" id="5WZ-1Q-E3R"/>
@@ -255,7 +330,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9aR-ft-tUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="166" y="794"/>
+            <point key="canvasLocation" x="390" y="1519"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1Tl-v2-3Qe">
@@ -270,15 +345,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="protected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atG-f4-pDw">
-                                <frame key="frameInset" minX="141" minY="97" width="75" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="0z6-Z7-gFR">
-                                <frame key="frameInset" minX="168" minY="265" width="20" height="20"/>
+                                <frame key="frameInset" minX="177" minY="323" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
                         </subviews>
@@ -288,6 +356,7 @@
                     <navigationItem key="navigationItem" id="i78-H2-qLz"/>
                     <connections>
                         <segue destination="KRh-Oy-coG" kind="presentation" identifier="signIn" id="Oe5-Xg-SIU"/>
+                        <segue destination="49e-Tb-3d3" kind="presentation" identifier="mainMenu" id="1Q3-uD-WE4"/>
                     </connections>
                 </viewController>
             </objects>
@@ -306,11 +375,13 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="pvL-jF-fww" kind="relationship" relationship="viewControllers" id="Lbf-WN-Km6"/>
+                        <segue destination="A8g-ID-4hg" kind="relationship" relationship="viewControllers" id="Pse-67-pMb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2057" y="5"/>
+            <point key="canvasLocation" x="1660" y="5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CYs-LC-7zN">
@@ -336,6 +407,6 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Oe5-Xg-SIU"/>
+        <segue reference="SC1-Y6-Al7"/>
     </inferredMetricsTieBreakers>
 </document>

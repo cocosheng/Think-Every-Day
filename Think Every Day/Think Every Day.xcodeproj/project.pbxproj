@@ -8,14 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		8A7878A41D94752F0062EF79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878A31D94752F0062EF79 /* AppDelegate.swift */; };
-		8A7878A61D94752F0062EF79 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878A51D94752F0062EF79 /* FirstViewController.swift */; };
-		8A7878A81D94752F0062EF79 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878A71D94752F0062EF79 /* SecondViewController.swift */; };
+		8A7878A61D94752F0062EF79 /* TodayQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878A51D94752F0062EF79 /* TodayQuestionViewController.swift */; };
+		8A7878A81D94752F0062EF79 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878A71D94752F0062EF79 /* DiscoveryViewController.swift */; };
 		8A7878AB1D94752F0062EF79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7878A91D94752F0062EF79 /* Main.storyboard */; };
 		8A7878AD1D94752F0062EF79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A7878AC1D94752F0062EF79 /* Assets.xcassets */; };
 		8A7878B01D94752F0062EF79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7878AE1D94752F0062EF79 /* LaunchScreen.storyboard */; };
 		8A7878BB1D94752F0062EF79 /* Think_Every_DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878BA1D94752F0062EF79 /* Think_Every_DayTests.swift */; };
 		8A7878C61D94752F0062EF79 /* Think_Every_DayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878C51D94752F0062EF79 /* Think_Every_DayUITests.swift */; };
 		CE6469521DA193EC00D03D26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6469511DA193EC00D03D26 /* ViewController.swift */; };
+		CE6469561DA2DF3D00D03D26 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6469551DA2DF3D00D03D26 /* SignInViewController.swift */; };
+		CE6469581DA2DF6300D03D26 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6469571DA2DF6300D03D26 /* SignUpViewController.swift */; };
+		CE64695A1DA2DF9500D03D26 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6469591DA2DF9500D03D26 /* ForgotPasswordViewController.swift */; };
+		CE64695C1DA2E7B200D03D26 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64695B1DA2E7B200D03D26 /* NotificationViewController.swift */; };
+		CE64695E1DA2E7D900D03D26 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64695D1DA2E7D900D03D26 /* AccountViewController.swift */; };
 		CE92E8531DA1895D00ED3EAE /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92E8521DA1895D00ED3EAE /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +44,8 @@
 /* Begin PBXFileReference section */
 		8A7878A01D94752F0062EF79 /* Think Every Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Think Every Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7878A31D94752F0062EF79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A7878A51D94752F0062EF79 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		8A7878A71D94752F0062EF79 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		8A7878A51D94752F0062EF79 /* TodayQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayQuestionViewController.swift; sourceTree = "<group>"; };
+		8A7878A71D94752F0062EF79 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
 		8A7878AA1D94752F0062EF79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A7878AC1D94752F0062EF79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A7878AF1D94752F0062EF79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +57,11 @@
 		8A7878C51D94752F0062EF79 /* Think_Every_DayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Think_Every_DayUITests.swift; sourceTree = "<group>"; };
 		8A7878C71D94752F0062EF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE6469511DA193EC00D03D26 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE6469551DA2DF3D00D03D26 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		CE6469571DA2DF6300D03D26 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CE6469591DA2DF9500D03D26 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		CE64695B1DA2E7B200D03D26 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		CE64695D1DA2E7D900D03D26 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		CE92E8521DA1895D00ED3EAE /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,14 +114,19 @@
 			isa = PBXGroup;
 			children = (
 				8A7878A31D94752F0062EF79 /* AppDelegate.swift */,
-				8A7878A51D94752F0062EF79 /* FirstViewController.swift */,
-				8A7878A71D94752F0062EF79 /* SecondViewController.swift */,
+				CE6469591DA2DF9500D03D26 /* ForgotPasswordViewController.swift */,
+				8A7878A51D94752F0062EF79 /* TodayQuestionViewController.swift */,
+				8A7878A71D94752F0062EF79 /* DiscoveryViewController.swift */,
 				CE6469511DA193EC00D03D26 /* ViewController.swift */,
 				CE92E8521DA1895D00ED3EAE /* Utilities.swift */,
+				CE64695B1DA2E7B200D03D26 /* NotificationViewController.swift */,
+				CE64695D1DA2E7D900D03D26 /* AccountViewController.swift */,
+				CE6469551DA2DF3D00D03D26 /* SignInViewController.swift */,
 				8A7878A91D94752F0062EF79 /* Main.storyboard */,
 				8A7878AC1D94752F0062EF79 /* Assets.xcassets */,
 				8A7878AE1D94752F0062EF79 /* LaunchScreen.storyboard */,
 				8A7878B11D94752F0062EF79 /* Info.plist */,
+				CE6469571DA2DF6300D03D26 /* SignUpViewController.swift */,
 			);
 			path = "Think Every Day";
 			sourceTree = "<group>";
@@ -270,11 +285,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE64695A1DA2DF9500D03D26 /* ForgotPasswordViewController.swift in Sources */,
 				CE6469521DA193EC00D03D26 /* ViewController.swift in Sources */,
-				8A7878A81D94752F0062EF79 /* SecondViewController.swift in Sources */,
+				CE6469581DA2DF6300D03D26 /* SignUpViewController.swift in Sources */,
+				8A7878A81D94752F0062EF79 /* DiscoveryViewController.swift in Sources */,
+				CE6469561DA2DF3D00D03D26 /* SignInViewController.swift in Sources */,
+				CE64695C1DA2E7B200D03D26 /* NotificationViewController.swift in Sources */,
+				CE64695E1DA2E7D900D03D26 /* AccountViewController.swift in Sources */,
 				8A7878A41D94752F0062EF79 /* AppDelegate.swift in Sources */,
 				CE92E8531DA1895D00ED3EAE /* Utilities.swift in Sources */,
-				8A7878A61D94752F0062EF79 /* FirstViewController.swift in Sources */,
+				8A7878A61D94752F0062EF79 /* TodayQuestionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
