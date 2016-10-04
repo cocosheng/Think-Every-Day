@@ -9,7 +9,7 @@
         <!--Choose Q-->
         <scene sceneID="v2T-om-1bn">
             <objects>
-                <viewController title="Choose Q" id="ufn-11-ZSw" sceneMemberID="viewController">
+                <viewController title="Choose Q" id="ufn-11-ZSw" customClass="TodayQuestionViewController" customModule="Think_Every_Day" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="R6P-N9-Ikr"/>
                         <viewControllerLayoutGuide type="bottom" id="4Fz-E3-hfO"/>
@@ -46,6 +46,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Today's Q"/>
                                 <connections>
+                                    <action selector="TodayQ:" destination="ufn-11-ZSw" eventType="touchUpInside" id="75G-eQ-fQg"/>
                                     <segue destination="NBh-9I-ZKy" kind="show" id="sTN-P5-M3T"/>
                                 </connections>
                             </button>

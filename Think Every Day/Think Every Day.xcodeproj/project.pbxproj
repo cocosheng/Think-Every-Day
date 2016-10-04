@@ -90,23 +90,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8A4C45A41DA42EF200F5A926 /* Sign in */ = {
+		8A4C45A41DA42EF200F5A926 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
 				CE6469571DA2DF6300D03D26 /* SignUpViewController.swift */,
 				CE6469551DA2DF3D00D03D26 /* SignInViewController.swift */,
 				CE6469591DA2DF9500D03D26 /* ForgotPasswordViewController.swift */,
 			);
-			name = "Sign in";
+			name = SignIn;
 			path = ..;
 			sourceTree = "<group>";
 		};
-		8A4C45A61DA42F4F00F5A926 /* Today's question */ = {
+		8A4C45A61DA42F4F00F5A926 /* TodayQ */ = {
 			isa = PBXGroup;
 			children = (
 				8A7878A51D94752F0062EF79 /* TodayQuestionViewController.swift */,
 			);
-			name = "Today's question";
+			name = TodayQ;
 			sourceTree = "<group>";
 		};
 		8A4C45A71DA42F6300F5A926 /* Discover */ = {
@@ -131,6 +131,13 @@
 				CE64695D1DA2E7D900D03D26 /* AccountViewController.swift */,
 			);
 			name = Account;
+			sourceTree = "<group>";
+		};
+		8A4C45CE1DA4585E00F5A926 /* AppGlobal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AppGlobal;
 			sourceTree = "<group>";
 		};
 		8A7878971D94752E0062EF79 = {
@@ -163,8 +170,9 @@
 				8A7878AC1D94752F0062EF79 /* Assets.xcassets */,
 				8A7878AE1D94752F0062EF79 /* LaunchScreen.storyboard */,
 				8A7878B11D94752F0062EF79 /* Info.plist */,
-				8A4C45A41DA42EF200F5A926 /* Sign in */,
-				8A4C45A61DA42F4F00F5A926 /* Today's question */,
+				8A4C45CE1DA4585E00F5A926 /* AppGlobal */,
+				8A4C45A41DA42EF200F5A926 /* SignIn */,
+				8A4C45A61DA42F4F00F5A926 /* TodayQ */,
 				8A4C45A81DA42F6E00F5A926 /* Notification */,
 				8A4C45A71DA42F6300F5A926 /* Discover */,
 				8A4C45A91DA42F7B00F5A926 /* Account */,
