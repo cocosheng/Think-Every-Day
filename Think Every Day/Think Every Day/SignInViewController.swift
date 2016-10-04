@@ -13,10 +13,11 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var UsernameSignInTextField: UITextField!
     @IBOutlet weak var PasswordSignInTextField: UITextField!
 
+    @IBOutlet weak var AppIconSignIn: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.AppIconSignIn.image = #imageLiteral(resourceName: "AppIconMainMenu")
     }
 
     override func didReceiveMemoryWarning() {

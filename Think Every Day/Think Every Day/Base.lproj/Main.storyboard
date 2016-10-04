@@ -283,6 +283,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="AppIconSignIn" destination="99P-ec-tcp" id="Aid-CB-zTH"/>
                         <outlet property="PasswordSignInTextField" destination="XpT-9a-bRh" id="1nS-3L-kZA"/>
                         <outlet property="UsernameSignInTextField" destination="dV6-bN-kK5" id="V90-cJ-H4D"/>
                     </connections>
@@ -441,6 +442,6 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="h91-5Y-dao"/>
+        <segue reference="Oe5-Xg-SIU"/>
     </inferredMetricsTieBreakers>
 </document>
