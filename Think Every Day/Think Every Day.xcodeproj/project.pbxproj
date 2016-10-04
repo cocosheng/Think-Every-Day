@@ -57,9 +57,9 @@
 		8A7878C51D94752F0062EF79 /* Think_Every_DayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Think_Every_DayUITests.swift; sourceTree = "<group>"; };
 		8A7878C71D94752F0062EF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE6469511DA193EC00D03D26 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE6469551DA2DF3D00D03D26 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		CE6469571DA2DF6300D03D26 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		CE6469591DA2DF9500D03D26 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		CE6469551DA2DF3D00D03D26 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = "Think Every Day/SignInViewController.swift"; sourceTree = "<group>"; };
+		CE6469571DA2DF6300D03D26 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = "Think Every Day/SignUpViewController.swift"; sourceTree = "<group>"; };
+		CE6469591DA2DF9500D03D26 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForgotPasswordViewController.swift; path = "Think Every Day/ForgotPasswordViewController.swift"; sourceTree = "<group>"; };
 		CE64695B1DA2E7B200D03D26 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		CE64695D1DA2E7D900D03D26 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		CE92E8521DA1895D00ED3EAE /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -90,6 +90,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A4C45A41DA42EF200F5A926 /* Sign in */ = {
+			isa = PBXGroup;
+			children = (
+				CE6469571DA2DF6300D03D26 /* SignUpViewController.swift */,
+				CE6469551DA2DF3D00D03D26 /* SignInViewController.swift */,
+				CE6469591DA2DF9500D03D26 /* ForgotPasswordViewController.swift */,
+			);
+			name = "Sign in";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		8A4C45A61DA42F4F00F5A926 /* Today's question */ = {
+			isa = PBXGroup;
+			children = (
+				8A7878A51D94752F0062EF79 /* TodayQuestionViewController.swift */,
+			);
+			name = "Today's question";
+			sourceTree = "<group>";
+		};
+		8A4C45A71DA42F6300F5A926 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				8A7878A71D94752F0062EF79 /* DiscoveryViewController.swift */,
+			);
+			name = Discover;
+			sourceTree = "<group>";
+		};
+		8A4C45A81DA42F6E00F5A926 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				CE64695B1DA2E7B200D03D26 /* NotificationViewController.swift */,
+			);
+			name = Notification;
+			sourceTree = "<group>";
+		};
+		8A4C45A91DA42F7B00F5A926 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				CE64695D1DA2E7D900D03D26 /* AccountViewController.swift */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
 		8A7878971D94752E0062EF79 = {
 			isa = PBXGroup;
 			children = (
@@ -114,19 +157,17 @@
 			isa = PBXGroup;
 			children = (
 				8A7878A31D94752F0062EF79 /* AppDelegate.swift */,
-				CE6469591DA2DF9500D03D26 /* ForgotPasswordViewController.swift */,
-				8A7878A51D94752F0062EF79 /* TodayQuestionViewController.swift */,
-				8A7878A71D94752F0062EF79 /* DiscoveryViewController.swift */,
 				CE6469511DA193EC00D03D26 /* ViewController.swift */,
 				CE92E8521DA1895D00ED3EAE /* Utilities.swift */,
-				CE64695B1DA2E7B200D03D26 /* NotificationViewController.swift */,
-				CE64695D1DA2E7D900D03D26 /* AccountViewController.swift */,
-				CE6469551DA2DF3D00D03D26 /* SignInViewController.swift */,
 				8A7878A91D94752F0062EF79 /* Main.storyboard */,
 				8A7878AC1D94752F0062EF79 /* Assets.xcassets */,
 				8A7878AE1D94752F0062EF79 /* LaunchScreen.storyboard */,
 				8A7878B11D94752F0062EF79 /* Info.plist */,
-				CE6469571DA2DF6300D03D26 /* SignUpViewController.swift */,
+				8A4C45A41DA42EF200F5A926 /* Sign in */,
+				8A4C45A61DA42F4F00F5A926 /* Today's question */,
+				8A4C45A81DA42F6E00F5A926 /* Notification */,
+				8A4C45A71DA42F6300F5A926 /* Discover */,
+				8A4C45A91DA42F7B00F5A926 /* Account */,
 			);
 			path = "Think Every Day";
 			sourceTree = "<group>";
