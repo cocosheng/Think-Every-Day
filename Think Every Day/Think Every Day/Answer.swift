@@ -14,6 +14,7 @@
 //    //required
 //    var content: String!
 //    var upVotes: Int!
+// // decide downVotes needed later.
 //    var downVotes: Int!
 //    var category: String!
 //    

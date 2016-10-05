@@ -19,7 +19,6 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -29,16 +28,35 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func SignUpButton(_ sender: UIButton) {
-        FIRAuth.auth()?.createUser(withEmail: UsernameSignUp.text!, password: PasswordSignUp.text!, completion: {
-            user, error in
-            if error != nil {
-                // user already existed
-            }
-            else{
-                print("User created")
+        if PasswordSignUp.text != PasswordCheckSignUp.text {
+            // TODO: show alert for dismatched passwords.
+            
+            print("Your passwords do not match.")
+        }
+        else {
+            FIRAuth.auth()?.createUser(withEmail: UsernameSignUp.text!, password: PasswordSignUp.text!, completion: {
+                user, error in
+                if error != nil {
+                    // Show alert user already exists.
+                    print("User email already registered.")
+                } else{
+                let user = FIRAuth.auth()?.currentUser
+                user?.sendEmailVerification(completion: { error in
+                    if let error = error {
+                        // Show alert user email invalid.
+                        print("User email invalid.")
+                    } else {
+                        // Show alert email sent.
+                        print("Email sent")
+                    }
+                })
                 // directly go to main view
-                self.performSegue(withIdentifier: "SignedUp", sender: self)
-            }
-        })
+                // // should go to sign in page and treat as normal sign in user.
+                //                self.performSegue(withIdentifier: "SignedUp", sender: self)
+                self.performSegue(withIdentifier: "SignedUpToSignIn", sender: self)
+                print("User created, now go to sign in page")
+                }
+            })
+        }
     }
 }

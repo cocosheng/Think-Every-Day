@@ -28,19 +28,21 @@ class SignInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func SignInButtonTapped(_ sender: AnyObject) {
-        self.dismiss(animated: true, completion: nil);
-        // Change isSignedIn bool to true.
-        // // no need, as firebass provides current user tracking
+    @IBAction func SignInButtonTapped(_ sender: UIButton) {
         // // can get the user's account data from the user object that's passed to the callback method
         FIRAuth.auth()?.signIn(withEmail: UsernameSignInTextField.text!, password: PasswordSignInTextField.text!, completion: {
             user, error in
             if error != nil{
-                // wrong sign in information
-                print("Incorrect")
+                // TODO: Show alert incorrect password.
+                
+                // Password or email address not recognized?
+                print("Your password is incorrect.")
             }
             else{
-                print("Successful sign in")
+                // Successfully signed up. Go to main menu.
+                self.performSegue(withIdentifier: "SignedUpMainMenu", sender: self)
+                print("Successful signed in.")
+                self.dismiss(animated: true, completion: nil);
             }
         })
     }

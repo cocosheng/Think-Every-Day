@@ -8,8 +8,12 @@
 
 import UIKit
 
+import Firebase
+
 class ForgotPasswordViewController: UIViewController {
 
+    @IBOutlet weak var EmailForgotPassword: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -20,4 +24,18 @@ class ForgotPasswordViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func resetPasswordForgotPassword(_ sender: UIButton) {
+        let email = EmailForgotPassword.text
+        FIRAuth.auth()?.sendPasswordReset(withEmail: email!, completion: {
+            error in
+            if let error = error {
+                print("Email address is incorrect.")
+            } else {
+                // TODO: Show alert.
+                print("Password reset email sent.")
+                self.performSegue(withIdentifier: "forgotPasswordResetSignIn", sender: self)
+            }
+        })
+    }
+
 }

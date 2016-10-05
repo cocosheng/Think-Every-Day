@@ -20,5 +20,25 @@ class AccountViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    // user info: https://firebase.google.com/docs/auth/ios/manage-users
+//    if let user = FIRAuth.auth()?.currentUser {
+//        let name = user.displayName
+//        let email = user.email
+//        let photoUrl = user.photoURL
+//        let uid = user.uid;  // The user's ID, unique to the Firebase project.
+//        // Do NOT use this value to authenticate with
+//        // your backend server, if you have one. Use
+//        // getTokenWithCompletion:completion: instead.
+//    } else {
+//    // No user is signed in.
+//    }
+    
+    
+    // TODO: Reset user password.
+    
+    // TODO: Reset user name.
+    
+    // Currently do not support user email change.
+    
+    
 }
