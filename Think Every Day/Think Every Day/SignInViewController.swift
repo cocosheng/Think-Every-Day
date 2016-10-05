@@ -11,7 +11,8 @@ import UIKit
 import Firebase
 
 @objc(SignInViewController)
-class SignInViewController: UIViewController {
+
+class SignInViewController: UIViewController, GIDSignInUIDelegate {
 
     @IBOutlet weak var UsernameSignInTextField: UITextField!
     @IBOutlet weak var PasswordSignInTextField: UITextField!
@@ -20,7 +21,12 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        GIDSignIn.sharedInstance().uiDelegate = self
+        
+        GIDSignIn.sharedInstance().signInSilently()
+
         self.AppIconSignIn.image = #imageLiteral(resourceName: "AppIconMainMenu")
+        // TODO: Google sign-in button.
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,14 +43,18 @@ class SignInViewController: UIViewController {
                 
                 // Password or email address not recognized?
                 print("Your password is incorrect.")
+                return
             }
-            else{
-                // Successfully signed up. Go to main menu.
-                self.performSegue(withIdentifier: "SignedUpMainMenu", sender: self)
-                print("Successful signed in.")
-                self.dismiss(animated: true, completion: nil);
-            }
+            // Successfully signed up. Go to main menu.
+            self.performSegue(withIdentifier: "SignedUpMainMenu",sender: self)
+            print("Successful signed in.")
+            self.dismiss(animated: true, completion: nil);
         })
     }
+    
+    // Google authenticate Google signin.
+    // FIRAuth.auth()?.signIn(with: credential) {(user, error) in 
+    //
+    // }
 
 }

@@ -30,11 +30,11 @@ class ForgotPasswordViewController: UIViewController {
             error in
             if let error = error {
                 print("Email address is incorrect.")
-            } else {
-                // TODO: Show alert.
-                print("Password reset email sent.")
-                self.performSegue(withIdentifier: "forgotPasswordResetSignIn", sender: self)
+                return
             }
+            // TODO: Show alert.
+            print("Password reset email sent.")
+            self.performSegue(withIdentifier: "forgotPasswordResetSignIn", sender: self)
         })
     }
 

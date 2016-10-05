@@ -85,6 +85,7 @@
 		CE6469591DA2DF9500D03D26 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForgotPasswordViewController.swift; path = "Think Every Day/ForgotPasswordViewController.swift"; sourceTree = "<group>"; };
 		CE64695B1DA2E7B200D03D26 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		CE64695D1DA2E7D900D03D26 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		CE7F0F3D1DA5140700ED3799 /* Think Every Day-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Think Every Day-Bridging-Header.h"; sourceTree = "<group>"; };
 		CE92E8521DA1895D00ED3EAE /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		E8543714E5148043F862FE43 /* Pods-Think Every Day.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Think Every Day.release.xcconfig"; path = "Pods/Target Support Files/Pods-Think Every Day/Pods-Think Every Day.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,6 +226,7 @@
 				8A4C45A81DA42F6E00F5A926 /* Notification */,
 				8A4C45A71DA42F6300F5A926 /* Discover */,
 				8A4C45A91DA42F7B00F5A926 /* Account */,
+				CE7F0F3D1DA5140700ED3799 /* Think Every Day-Bridging-Header.h */,
 			);
 			path = "Think Every Day";
 			sourceTree = "<group>";
@@ -318,6 +320,7 @@
 				TargetAttributes = {
 					8A78789F1D94752E0062EF79 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Manual;
 					};
 					8A7878B51D94752F0062EF79 = {
@@ -611,11 +614,14 @@
 			baseConfigurationReference = 07A5569EC9AB30E4DEE29451 /* Pods-Think Every Day.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Think Every Day/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = .com.ThinkEveryDay.ThinkEveryDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Think Every Day/Think Every Day-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -625,11 +631,13 @@
 			baseConfigurationReference = E8543714E5148043F862FE43 /* Pods-Think Every Day.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Think Every Day/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = .com.ThinkEveryDay.ThinkEveryDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Think Every Day/Think Every Day-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

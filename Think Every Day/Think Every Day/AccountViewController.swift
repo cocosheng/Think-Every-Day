@@ -29,14 +29,18 @@ class AccountViewController: UIViewController {
 //        // Do NOT use this value to authenticate with
 //        // your backend server, if you have one. Use
 //        // getTokenWithCompletion:completion: instead.
-//    } else {
-//    // No user is signed in.
+//        // return
 //    }
+//    // No user is signed in.
+
     
     
     // TODO: Reset user password.
     
     // TODO: Reset user name.
+    
+    // TODO: Sign out when tap sign out..
+    // try! FIRAuth.auth()!.signOut()
     
     // Currently do not support user email change.
     
