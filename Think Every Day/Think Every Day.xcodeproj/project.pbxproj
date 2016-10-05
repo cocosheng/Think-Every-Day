@@ -17,9 +17,6 @@
 		8A4C45D81DA47F6800F5A926 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45D71DA47F6800F5A926 /* Tag.swift */; };
 		8A4C45D91DA47F6800F5A926 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45D71DA47F6800F5A926 /* Tag.swift */; };
 		8A4C45DA1DA47F6800F5A926 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45D71DA47F6800F5A926 /* Tag.swift */; };
-		8A4C45DC1DA4804400F5A926 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45DB1DA4804400F5A926 /* User.swift */; };
-		8A4C45DD1DA4804400F5A926 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45DB1DA4804400F5A926 /* User.swift */; };
-		8A4C45DE1DA4804400F5A926 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45DB1DA4804400F5A926 /* User.swift */; };
 		8A4C45E01DA484E100F5A926 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */; };
 		8A4C45E11DA484E100F5A926 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */; };
 		8A4C45E21DA484E100F5A926 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */; };
@@ -31,6 +28,7 @@
 		8A7878B01D94752F0062EF79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7878AE1D94752F0062EF79 /* LaunchScreen.storyboard */; };
 		8A7878BB1D94752F0062EF79 /* Think_Every_DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878BA1D94752F0062EF79 /* Think_Every_DayTests.swift */; };
 		8A7878C61D94752F0062EF79 /* Think_Every_DayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878C51D94752F0062EF79 /* Think_Every_DayUITests.swift */; };
+		8A8DEA081DA4C2F900A1838F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DEA071DA4C2F900A1838F /* User.swift */; };
 		CE6469521DA193EC00D03D26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6469511DA193EC00D03D26 /* ViewController.swift */; };
 		CE6469561DA2DF3D00D03D26 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6469551DA2DF3D00D03D26 /* SignInViewController.swift */; };
 		CE6469581DA2DF6300D03D26 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6469571DA2DF6300D03D26 /* SignUpViewController.swift */; };
@@ -63,7 +61,6 @@
 		8A4C45CF1DA458DB00F5A926 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		8A4C45D31DA45A9D00F5A926 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		8A4C45D71DA47F6800F5A926 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
-		8A4C45DB1DA4804400F5A926 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8A7878A01D94752F0062EF79 /* Think Every Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Think Every Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7878A31D94752F0062EF79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +76,7 @@
 		8A7878C11D94752F0062EF79 /* Think Every DayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Think Every DayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7878C51D94752F0062EF79 /* Think_Every_DayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Think_Every_DayUITests.swift; sourceTree = "<group>"; };
 		8A7878C71D94752F0062EF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A8DEA071DA4C2F900A1838F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CE6469511DA193EC00D03D26 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE6469551DA2DF3D00D03D26 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = "Think Every Day/SignInViewController.swift"; sourceTree = "<group>"; };
 		CE6469571DA2DF6300D03D26 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = "Think Every Day/SignUpViewController.swift"; sourceTree = "<group>"; };
@@ -176,15 +174,15 @@
 			name = Account;
 			sourceTree = "<group>";
 		};
-		8A4C45CE1DA4585E00F5A926 /* AppGlobal */ = {
+		8A4C45CE1DA4585E00F5A926 /* AppWideObjects */ = {
 			isa = PBXGroup;
 			children = (
 				8A4C45CF1DA458DB00F5A926 /* Question.swift */,
 				8A4C45D31DA45A9D00F5A926 /* Answer.swift */,
 				8A4C45D71DA47F6800F5A926 /* Tag.swift */,
-				8A4C45DB1DA4804400F5A926 /* User.swift */,
+				8A8DEA071DA4C2F900A1838F /* User.swift */,
 			);
-			name = AppGlobal;
+			name = AppWideObjects;
 			sourceTree = "<group>";
 		};
 		8A7878971D94752E0062EF79 = {
@@ -220,7 +218,7 @@
 				8A7878AE1D94752F0062EF79 /* LaunchScreen.storyboard */,
 				8A7878B11D94752F0062EF79 /* Info.plist */,
 				8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */,
-				8A4C45CE1DA4585E00F5A926 /* AppGlobal */,
+				8A4C45CE1DA4585E00F5A926 /* AppWideObjects */,
 				8A4C45A41DA42EF200F5A926 /* SignIn */,
 				8A4C45A61DA42F4F00F5A926 /* TodayQ */,
 				8A4C45A81DA42F6E00F5A926 /* Notification */,
@@ -446,7 +444,7 @@
 				8A4C45D41DA45A9D00F5A926 /* Answer.swift in Sources */,
 				8A7878A81D94752F0062EF79 /* DiscoveryViewController.swift in Sources */,
 				CE6469561DA2DF3D00D03D26 /* SignInViewController.swift in Sources */,
-				8A4C45DC1DA4804400F5A926 /* User.swift in Sources */,
+				8A8DEA081DA4C2F900A1838F /* User.swift in Sources */,
 				CE64695C1DA2E7B200D03D26 /* NotificationViewController.swift in Sources */,
 				CE64695E1DA2E7D900D03D26 /* AccountViewController.swift in Sources */,
 				8A7878A41D94752F0062EF79 /* AppDelegate.swift in Sources */,
@@ -464,7 +462,6 @@
 				8A4C45D51DA45A9D00F5A926 /* Answer.swift in Sources */,
 				8A4C45D91DA47F6800F5A926 /* Tag.swift in Sources */,
 				8A7878BB1D94752F0062EF79 /* Think_Every_DayTests.swift in Sources */,
-				8A4C45DD1DA4804400F5A926 /* User.swift in Sources */,
 				8A4C45D11DA458DB00F5A926 /* Question.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,7 +473,6 @@
 				8A4C45D61DA45A9D00F5A926 /* Answer.swift in Sources */,
 				8A4C45DA1DA47F6800F5A926 /* Tag.swift in Sources */,
 				8A7878C61D94752F0062EF79 /* Think_Every_DayUITests.swift in Sources */,
-				8A4C45DE1DA4804400F5A926 /* User.swift in Sources */,
 				8A4C45D21DA458DB00F5A926 /* Question.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
