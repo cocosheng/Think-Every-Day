@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C0C1357A26AC321C2A6F2D0 /* Pods_Think_Every_Day.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2D27B0746DC62297516473 /* Pods_Think_Every_Day.framework */; };
 		8A4C45D01DA458DB00F5A926 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45CF1DA458DB00F5A926 /* Question.swift */; };
 		8A4C45D11DA458DB00F5A926 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45CF1DA458DB00F5A926 /* Question.swift */; };
 		8A4C45D21DA458DB00F5A926 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45CF1DA458DB00F5A926 /* Question.swift */; };
@@ -57,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07A5569EC9AB30E4DEE29451 /* Pods-Think Every Day.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Think Every Day.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Think Every Day/Pods-Think Every Day.debug.xcconfig"; sourceTree = "<group>"; };
+		2C2D27B0746DC62297516473 /* Pods_Think_Every_Day.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Think_Every_Day.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4C45CF1DA458DB00F5A926 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		8A4C45D31DA45A9D00F5A926 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		8A4C45D71DA47F6800F5A926 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
@@ -83,6 +86,7 @@
 		CE64695B1DA2E7B200D03D26 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		CE64695D1DA2E7D900D03D26 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		CE92E8521DA1895D00ED3EAE /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		E8543714E5148043F862FE43 /* Pods-Think Every Day.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Think Every Day.release.xcconfig"; path = "Pods/Target Support Files/Pods-Think Every Day/Pods-Think Every Day.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C0C1357A26AC321C2A6F2D0 /* Pods_Think_Every_Day.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,9 +115,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DD8ED0AA28C5A2363A11D1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07A5569EC9AB30E4DEE29451 /* Pods-Think Every Day.debug.xcconfig */,
+				E8543714E5148043F862FE43 /* Pods-Think Every Day.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		885B76B3AF44D4F4FD1BC300 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C2D27B0746DC62297516473 /* Pods_Think_Every_Day.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -179,6 +194,7 @@
 				8A7878C41D94752F0062EF79 /* Think Every DayUITests */,
 				8A7878A11D94752F0062EF79 /* Products */,
 				885B76B3AF44D4F4FD1BC300 /* Frameworks */,
+				5DD8ED0AA28C5A2363A11D1B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,9 +254,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A7878CA1D94752F0062EF79 /* Build configuration list for PBXNativeTarget "Think Every Day" */;
 			buildPhases = (
+				848718EFCF207385DEBC7FFB /* [CP] Check Pods Manifest.lock */,
 				8A78789C1D94752E0062EF79 /* Sources */,
 				8A78789D1D94752E0062EF79 /* Frameworks */,
 				8A78789E1D94752E0062EF79 /* Resources */,
+				109F81C32065FAEAED6DAFA2 /* [CP] Embed Pods Frameworks */,
+				33C56577674490B91658C6A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,12 +274,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A7878CD1D94752F0062EF79 /* Build configuration list for PBXNativeTarget "Think Every DayTests" */;
 			buildPhases = (
-				6BC9F9915F571C09CF69843D /* [CP] Check Pods Manifest.lock */,
 				8A7878B21D94752F0062EF79 /* Sources */,
 				8A7878B31D94752F0062EF79 /* Frameworks */,
 				8A7878B41D94752F0062EF79 /* Resources */,
-				858F21C13611AEAB394880D0 /* [CP] Embed Pods Frameworks */,
-				8339AC22697EE7F8DB8B8694 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -276,12 +292,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A7878D01D94752F0062EF79 /* Build configuration list for PBXNativeTarget "Think Every DayUITests" */;
 			buildPhases = (
-				1D9B437A4ACFC10737B42B39 /* [CP] Check Pods Manifest.lock */,
 				8A7878BD1D94752F0062EF79 /* Sources */,
 				8A7878BE1D94752F0062EF79 /* Frameworks */,
 				8A7878BF1D94752F0062EF79 /* Resources */,
-				C4E85BD873948D3B957E058B /* [CP] Embed Pods Frameworks */,
-				A613F41531439CE35060735D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -372,7 +385,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1D9B437A4ACFC10737B42B39 /* [CP] Check Pods Manifest.lock */ = {
+		109F81C32065FAEAED6DAFA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Think Every Day/Pods-Think Every Day-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33C56577674490B91658C6A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Think Every Day/Pods-Think Every Day-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		848718EFCF207385DEBC7FFB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -385,81 +428,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		6BC9F9915F571C09CF69843D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		8339AC22697EE7F8DB8B8694 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Think Every DayTests/Pods-Think Every DayTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		858F21C13611AEAB394880D0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Think Every DayTests/Pods-Think Every DayTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A613F41531439CE35060735D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Think Every DayUITests/Pods-Think Every DayUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C4E85BD873948D3B957E058B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Think Every DayUITests/Pods-Think Every DayUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -563,6 +531,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -612,6 +581,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -638,6 +608,7 @@
 		};
 		8A7878CB1D94752F0062EF79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07A5569EC9AB30E4DEE29451 /* Pods-Think Every Day.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -651,6 +622,7 @@
 		};
 		8A7878CC1D94752F0062EF79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8543714E5148043F862FE43 /* Pods-Think Every Day.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";

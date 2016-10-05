@@ -1,0 +1,6 @@
+framework module Pods_Think_Every_Day {
+  umbrella header "Pods-Think Every Day-umbrella.h"
+
+  export *
+  module * { export * }
+}
