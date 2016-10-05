@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A4C45D01DA458DB00F5A926 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45CF1DA458DB00F5A926 /* Question.swift */; };
+		8A4C45D11DA458DB00F5A926 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45CF1DA458DB00F5A926 /* Question.swift */; };
+		8A4C45D21DA458DB00F5A926 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45CF1DA458DB00F5A926 /* Question.swift */; };
+		8A4C45D41DA45A9D00F5A926 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45D31DA45A9D00F5A926 /* Answer.swift */; };
+		8A4C45D51DA45A9D00F5A926 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45D31DA45A9D00F5A926 /* Answer.swift */; };
+		8A4C45D61DA45A9D00F5A926 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45D31DA45A9D00F5A926 /* Answer.swift */; };
+		8A4C45D81DA47F6800F5A926 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45D71DA47F6800F5A926 /* Tag.swift */; };
+		8A4C45D91DA47F6800F5A926 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45D71DA47F6800F5A926 /* Tag.swift */; };
+		8A4C45DA1DA47F6800F5A926 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45D71DA47F6800F5A926 /* Tag.swift */; };
+		8A4C45DC1DA4804400F5A926 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45DB1DA4804400F5A926 /* User.swift */; };
+		8A4C45DD1DA4804400F5A926 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45DB1DA4804400F5A926 /* User.swift */; };
+		8A4C45DE1DA4804400F5A926 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45DB1DA4804400F5A926 /* User.swift */; };
+		8A4C45E01DA484E100F5A926 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */; };
+		8A4C45E11DA484E100F5A926 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */; };
+		8A4C45E21DA484E100F5A926 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */; };
 		8A7878A41D94752F0062EF79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878A31D94752F0062EF79 /* AppDelegate.swift */; };
 		8A7878A61D94752F0062EF79 /* TodayQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878A51D94752F0062EF79 /* TodayQuestionViewController.swift */; };
 		8A7878A81D94752F0062EF79 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878A71D94752F0062EF79 /* DiscoveryViewController.swift */; };
@@ -42,6 +57,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A4C45CF1DA458DB00F5A926 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		8A4C45D31DA45A9D00F5A926 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		8A4C45D71DA47F6800F5A926 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		8A4C45DB1DA4804400F5A926 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8A7878A01D94752F0062EF79 /* Think Every Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Think Every Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7878A31D94752F0062EF79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A7878A51D94752F0062EF79 /* TodayQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayQuestionViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +110,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		885B76B3AF44D4F4FD1BC300 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A4C45A41DA42EF200F5A926 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +163,10 @@
 		8A4C45CE1DA4585E00F5A926 /* AppGlobal */ = {
 			isa = PBXGroup;
 			children = (
+				8A4C45CF1DA458DB00F5A926 /* Question.swift */,
+				8A4C45D31DA45A9D00F5A926 /* Answer.swift */,
+				8A4C45D71DA47F6800F5A926 /* Tag.swift */,
+				8A4C45DB1DA4804400F5A926 /* User.swift */,
 			);
 			name = AppGlobal;
 			sourceTree = "<group>";
@@ -147,6 +178,7 @@
 				8A7878B91D94752F0062EF79 /* Think Every DayTests */,
 				8A7878C41D94752F0062EF79 /* Think Every DayUITests */,
 				8A7878A11D94752F0062EF79 /* Products */,
+				885B76B3AF44D4F4FD1BC300 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +202,7 @@
 				8A7878AC1D94752F0062EF79 /* Assets.xcassets */,
 				8A7878AE1D94752F0062EF79 /* LaunchScreen.storyboard */,
 				8A7878B11D94752F0062EF79 /* Info.plist */,
+				8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */,
 				8A4C45CE1DA4585E00F5A926 /* AppGlobal */,
 				8A4C45A41DA42EF200F5A926 /* SignIn */,
 				8A4C45A61DA42F4F00F5A926 /* TodayQ */,
@@ -222,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A7878CD1D94752F0062EF79 /* Build configuration list for PBXNativeTarget "Think Every DayTests" */;
 			buildPhases = (
+				6BC9F9915F571C09CF69843D /* [CP] Check Pods Manifest.lock */,
 				8A7878B21D94752F0062EF79 /* Sources */,
 				8A7878B31D94752F0062EF79 /* Frameworks */,
 				8A7878B41D94752F0062EF79 /* Resources */,
+				858F21C13611AEAB394880D0 /* [CP] Embed Pods Frameworks */,
+				8339AC22697EE7F8DB8B8694 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,9 +276,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A7878D01D94752F0062EF79 /* Build configuration list for PBXNativeTarget "Think Every DayUITests" */;
 			buildPhases = (
+				1D9B437A4ACFC10737B42B39 /* [CP] Check Pods Manifest.lock */,
 				8A7878BD1D94752F0062EF79 /* Sources */,
 				8A7878BE1D94752F0062EF79 /* Frameworks */,
 				8A7878BF1D94752F0062EF79 /* Resources */,
+				C4E85BD873948D3B957E058B /* [CP] Embed Pods Frameworks */,
+				A613F41531439CE35060735D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -308,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A7878B01D94752F0062EF79 /* LaunchScreen.storyboard in Resources */,
+				8A4C45E01DA484E100F5A926 /* GoogleService-Info.plist in Resources */,
 				8A7878AD1D94752F0062EF79 /* Assets.xcassets in Resources */,
 				8A7878AB1D94752F0062EF79 /* Main.storyboard in Resources */,
 			);
@@ -317,6 +357,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4C45E11DA484E100F5A926 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,10 +365,104 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4C45E21DA484E100F5A926 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D9B437A4ACFC10737B42B39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6BC9F9915F571C09CF69843D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8339AC22697EE7F8DB8B8694 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Think Every DayTests/Pods-Think Every DayTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		858F21C13611AEAB394880D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Think Every DayTests/Pods-Think Every DayTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A613F41531439CE35060735D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Think Every DayUITests/Pods-Think Every DayUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4E85BD873948D3B957E058B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Think Every DayUITests/Pods-Think Every DayUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A78789C1D94752E0062EF79 /* Sources */ = {
@@ -337,12 +472,16 @@
 				CE64695A1DA2DF9500D03D26 /* ForgotPasswordViewController.swift in Sources */,
 				CE6469521DA193EC00D03D26 /* ViewController.swift in Sources */,
 				CE6469581DA2DF6300D03D26 /* SignUpViewController.swift in Sources */,
+				8A4C45D41DA45A9D00F5A926 /* Answer.swift in Sources */,
 				8A7878A81D94752F0062EF79 /* DiscoveryViewController.swift in Sources */,
 				CE6469561DA2DF3D00D03D26 /* SignInViewController.swift in Sources */,
+				8A4C45DC1DA4804400F5A926 /* User.swift in Sources */,
 				CE64695C1DA2E7B200D03D26 /* NotificationViewController.swift in Sources */,
 				CE64695E1DA2E7D900D03D26 /* AccountViewController.swift in Sources */,
 				8A7878A41D94752F0062EF79 /* AppDelegate.swift in Sources */,
 				CE92E8531DA1895D00ED3EAE /* Utilities.swift in Sources */,
+				8A4C45D81DA47F6800F5A926 /* Tag.swift in Sources */,
+				8A4C45D01DA458DB00F5A926 /* Question.swift in Sources */,
 				8A7878A61D94752F0062EF79 /* TodayQuestionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,7 +490,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4C45D51DA45A9D00F5A926 /* Answer.swift in Sources */,
+				8A4C45D91DA47F6800F5A926 /* Tag.swift in Sources */,
 				8A7878BB1D94752F0062EF79 /* Think_Every_DayTests.swift in Sources */,
+				8A4C45DD1DA4804400F5A926 /* User.swift in Sources */,
+				8A4C45D11DA458DB00F5A926 /* Question.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +502,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4C45D61DA45A9D00F5A926 /* Answer.swift in Sources */,
+				8A4C45DA1DA47F6800F5A926 /* Tag.swift in Sources */,
 				8A7878C61D94752F0062EF79 /* Think_Every_DayUITests.swift in Sources */,
+				8A4C45DE1DA4804400F5A926 /* User.swift in Sources */,
+				8A4C45D21DA458DB00F5A926 /* Question.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
