@@ -433,13 +433,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="2t4-4Y-s7h" userLabel="PasswordInput">
-                                <frame key="frameInset" minX="114" minY="237" width="146" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-enter password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="DBh-nB-BCs" userLabel="PasswordInput">
                                 <frame key="frameInset" minX="114" minY="311" width="146" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -465,6 +458,9 @@
                                 <frame key="frameInset" minX="150" minY="387" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign me up"/>
+                                <connections>
+                                    <action selector="SignUpButton:" destination="bt7-v7-L3W" eventType="touchUpInside" id="yUc-Zm-i3Z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoA-AG-f7Y">
                                 <frame key="frameInset" minX="125" minY="453" width="125" height="30"/>
@@ -474,9 +470,22 @@
                                     <segue destination="KRh-Oy-coG" kind="presentation" identifier="signInFromSignUp" id="SC1-Y6-Al7"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="2t4-4Y-s7h" userLabel="PasswordInput">
+                                <frame key="frameInset" minX="114" minY="237" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="PasswordCheckSignUp" destination="DBh-nB-BCs" id="Olt-T4-qTJ"/>
+                        <outlet property="PasswordSignUp" destination="2t4-4Y-s7h" id="t2m-wg-eZD"/>
+                        <outlet property="UsernameSignUp" destination="kgi-If-PUd" id="vZ6-lZ-2Ye"/>
+                        <segue destination="ufn-11-ZSw" kind="show" identifier="SignedUp" id="WZG-ZC-fWV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9aR-ft-tUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -681,7 +690,7 @@
             <objects>
                 <navigationController title="Pre-nav" automaticallyAdjustsScrollViewInsets="NO" id="dzw-gD-RdF" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4I9-we-KA5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4I9-we-KA5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -700,7 +709,7 @@
                 <navigationController title="Today-nav" automaticallyAdjustsScrollViewInsets="NO" id="Wo0-GO-XEB" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" selectedImage="first" id="cs2-QI-m9n"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QOh-6o-ykn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="QOh-6o-ykn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -719,7 +728,7 @@
                 <navigationController title="Discover-nav" automaticallyAdjustsScrollViewInsets="NO" id="Imd-j0-z7z" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="dZ6-Hy-lqO"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1eH-4j-wji">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="1eH-4j-wji">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -738,7 +747,7 @@
                 <navigationController title="Notification-nav" automaticallyAdjustsScrollViewInsets="NO" id="f72-VQ-kt7" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Dsb-Vf-wn5"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e7G-ST-WrP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="e7G-ST-WrP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -776,7 +785,7 @@
                 <navigationController title="Account-nav" automaticallyAdjustsScrollViewInsets="NO" id="cHO-63-br7" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="ao0-FC-Fz1"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qlF-74-yOR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qlF-74-yOR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -794,7 +803,8 @@
         <image name="first" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Oe5-Xg-SIU"/>
+        <segue reference="SC1-Y6-Al7"/>
+        <segue reference="WZG-ZC-fWV"/>
         <segue reference="sTN-P5-M3T"/>
         <segue reference="yxt-gF-4az"/>
     </inferredMetricsTieBreakers>
