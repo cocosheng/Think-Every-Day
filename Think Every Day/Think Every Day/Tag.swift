@@ -1,16 +1,13 @@
-////
-////  Tag.swift
-////  Think Every Day
-////
-////  Created by Ke Sheng on 10/4/16.
-////  Copyright © 2016 TED. All rights reserved.
-////
 //
-//import Foundation
+//  Tag.swift
+//  Think Every Day
 //
-//import UIKit
+//  Created by Ke Sheng on 10/5/16.
+//  Copyright © 2016 TED. All rights reserved.
 //
-//class Tag: NSObject {
-//    //required
-//    
-//}
+
+import UIKit
+
+class Tag: NSObject {
+
+}

@@ -8,7 +8,10 @@
 
 import UIKit
 
-class TodayQuestionViewController: UIViewController {
+
+class TodayQuestionViewController: UIViewController{
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +22,11 @@ class TodayQuestionViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func TodayQ(_ sender: UIButton) {
+
+    @IBAction func didPressTodayQ(_ sender: UIButton) {
         
     }
+    
+    
 }
 

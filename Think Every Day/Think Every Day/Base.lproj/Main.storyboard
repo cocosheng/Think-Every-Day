@@ -1,5 +1,10 @@
+<<<<<<< Updated upstream
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="L6I-Nb-Fs8">
+=======
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dzw-gD-RdF">
+>>>>>>> Stashed changes
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -19,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose one question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gor-HX-cYJ">
-                                <frame key="frameInset" minX="105" minY="118" width="165" height="24"/>
+                                <frame key="frameInset" minX="105" minY="118" width="162" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -30,7 +35,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Hot Q"/>
                                 <connections>
-                                    <segue destination="NBh-9I-ZKy" kind="show" id="F4F-3h-iDB"/>
+                                    <segue destination="NBh-9I-ZKy" kind="show" id="A6X-HN-9wq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKc-r9-dLW">
@@ -38,31 +43,122 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Custom Q"/>
                                 <connections>
-                                    <segue destination="NBh-9I-ZKy" kind="show" id="m5W-i4-Knj"/>
+                                    <segue destination="Wg0-uk-cfW" kind="show" id="MMh-3k-MY7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3C7-p2-6Sk">
-                                <frame key="frameInset" minX="153" minY="198" width="68" height="30"/>
+                                <frame key="frameInset" minX="153" minY="201" width="68" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Today's Q"/>
                                 <connections>
-                                    <action selector="TodayQ:" destination="ufn-11-ZSw" eventType="touchUpInside" id="75G-eQ-fQg"/>
-                                    <segue destination="NBh-9I-ZKy" kind="show" id="sTN-P5-M3T"/>
+                                    <action selector="didPressTodayQ:" destination="ufn-11-ZSw" eventType="touchUpInside" id="oUf-er-AqK"/>
+                                    <segue destination="NBh-9I-ZKy" kind="show" id="WGh-mo-bod"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="TsK-XQ-Eqs"/>
+                    <connections>
+                        <outlet property="TodayQButton" destination="3C7-p2-6Sk" id="dCe-Rb-t1u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iPs-wv-ybr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1567" y="1999"/>
+            <point key="canvasLocation" x="-1567.2" y="1998.3508245877063"/>
+        </scene>
+        <!--Custom Question-->
+        <scene sceneID="JUf-YL-P3F">
+            <objects>
+                <viewController title="Custom Question" id="Wg0-uk-cfW" customClass="CreateCustomQuestionViewController" customModule="Think_Every_Day" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2aP-8E-cm4"/>
+                        <viewControllerLayoutGuide type="bottom" id="Min-eX-QKQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lSh-hL-gqz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your question" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XP4-HB-qve">
+                                <frame key="frameInset" minX="16" minY="98" width="251" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Custom Question:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F12-9C-ded">
+                                <frame key="frameInset" minX="16" minY="69" width="138" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inspiration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAw-qa-LLO">
+                                <frame key="frameInset" minX="16" minY="149" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Kg-40-w2b">
+                                <frame key="frameInset" minX="16" minY="178" width="251" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyX-OP-wZV">
+                                <frame key="frameInset" minX="16" minY="323" width="71" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gc-wp-NxN">
+                                <frame key="frameInset" minX="16" minY="376" width="37" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upload to public question library?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eq8-Wr-WUO">
+                                <frame key="frameInset" minX="16" minY="433" width="257" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="506-u6-Jc6">
+                                <frame key="frameInset" minX="16" minY="617" width="184" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start answer your question"/>
+                                <connections>
+                                    <action selector="didFinishCreateCustomQuestion:" destination="Wg0-uk-cfW" eventType="touchUpInside" id="8UC-x0-FuE"/>
+                                    <segue destination="NBh-9I-ZKy" kind="show" id="Uv2-XE-sb1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="CreateCQContentTextField" destination="XP4-HB-qve" id="Rd9-kt-WpF"/>
+                        <outlet property="CreateCQInspirationTextField" destination="7Kg-40-w2b" id="UmR-Ay-cuc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KPl-1e-t4O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Pgq-qy-Ijt">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="Wg0-uk-cfW" id="hks-8s-7Ap"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-772" y="1997.4512743628188"/>
         </scene>
         <!--Answer Q-->
         <scene sceneID="aoY-tL-fA3">
             <objects>
-                <viewController title="Answer Q" id="NBh-9I-ZKy" sceneMemberID="viewController">
+                <viewController title="Answer Q" id="NBh-9I-ZKy" customClass="EditAnswerViewController" customModule="Think_Every_Day" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OqX-25-S1w"/>
                         <viewControllerLayoutGuide type="bottom" id="dRT-Pz-W6m"/>
@@ -76,7 +172,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save for later edit"/>
                                 <connections>
-                                    <segue destination="De5-Wv-XcX" kind="show" id="hyA-aP-ScG"/>
+                                    <action selector="SaveForLaterEdit:" destination="NBh-9I-ZKy" eventType="touchUpInside" id="oHL-sH-Ugg"/>
+                                    <segue destination="De5-Wv-XcX" kind="show" identifier="SaveForLaterSegue" id="hyA-aP-ScG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuw-c9-Fhf">
@@ -84,7 +181,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
-                                    <segue destination="De5-Wv-XcX" kind="show" id="yxt-gF-4az"/>
+                                    <action selector="SubmitAnswer:" destination="NBh-9I-ZKy" eventType="touchUpInside" id="Chc-I7-ifD"/>
+                                    <segue destination="De5-Wv-XcX" kind="show" identifier="SubmitSegue" id="yxt-gF-4az"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K7a-zL-6CL">
@@ -112,15 +210,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="EditAnswerInspirationLabel" destination="5w6-Yb-DYJ" id="GMp-Fw-sBd"/>
+                        <outlet property="EditAnswerQuestionLabel" destination="nYT-rD-bWq" id="9SF-Js-ZK7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fj-5s-H2h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1567" y="3016"/>
         </scene>
-        <!--HotA-->
+        <!--Hot Answer List-->
         <scene sceneID="LLm-O0-XZN">
             <objects>
-                <viewController title="HotA" id="3cq-WZ-erN" sceneMemberID="viewController">
+                <viewController title="Hot Answer List" id="3cq-WZ-erN" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vmw-i2-4F7"/>
                         <viewControllerLayoutGuide type="bottom" id="BQt-ao-PCE"/>
@@ -138,7 +240,11 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fXI-5m-Jvh" id="m4t-K9-JhO">
+<<<<<<< Updated upstream
                                             <frame key="frameInset" width="375" height="43"/>
+=======
+                                            <frame key="frameInset" width="375" height="43.5"/>
+>>>>>>> Stashed changes
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="answer content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1Z-VJ-oNH">
@@ -175,10 +281,10 @@
             </objects>
             <point key="canvasLocation" x="256.5" y="3015.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Hot Question List-->
         <scene sceneID="PNY-K5-Lto">
             <objects>
-                <viewController id="UQx-Qe-eW5" sceneMemberID="viewController">
+                <viewController title="Hot Question List" id="UQx-Qe-eW5" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NiH-fz-DWK"/>
                         <viewControllerLayoutGuide type="bottom" id="hlo-JP-sjQ"/>
@@ -196,7 +302,11 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="164"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6oI-Or-67C" id="g63-jv-lTq">
+<<<<<<< Updated upstream
                                             <frame key="frameInset" width="375" height="163"/>
+=======
+                                            <frame key="frameInset" width="375" height="163.5"/>
+>>>>>>> Stashed changes
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="question content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZw-qD-U4c">
@@ -222,7 +332,7 @@
         <!--Show A-->
         <scene sceneID="9BT-2F-4xz">
             <objects>
-                <viewController title="Show A" id="De5-Wv-XcX" sceneMemberID="viewController">
+                <viewController title="Show A" id="De5-Wv-XcX" customClass="EditAnswerViewController" customModule="Think_Every_Day" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mr5-ay-ZGj"/>
                         <viewControllerLayoutGuide type="bottom" id="8l9-ta-Du4"/>
@@ -232,7 +342,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fac-uP-pKj">
-                                <frame key="frameInset" minX="65" minY="211" width="245" height="288"/>
+                                <frame key="frameInset" minX="65" minY="215" width="245" height="288"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -258,7 +368,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Edit"/>
                                 <connections>
+                                    <action selector="EditAnswer:" destination="De5-Wv-XcX" eventType="touchUpInside" id="1ER-jf-aiU"/>
                                     <segue destination="NBh-9I-ZKy" kind="show" id="74g-d7-4wC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2n-lv-QEq">
+                                <frame key="frameInset" minX="65" minY="547" width="171" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Answer another question"/>
+                                <connections>
+                                    <segue destination="ufn-11-ZSw" kind="show" id="etp-kD-CoH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -267,7 +386,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H6L-OK-DpC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-910" y="3016"/>
+            <point key="canvasLocation" x="-788" y="3016"/>
         </scene>
         <!--Forget Password-->
         <scene sceneID="J3A-SO-jua">
@@ -590,7 +709,11 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="242"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4qv-w6-cb4" id="SOg-Hu-9yO">
+<<<<<<< Updated upstream
                                             <frame key="frameInset" width="375" height="241"/>
+=======
+                                            <frame key="frameInset" width="375" height="241.5"/>
+>>>>>>> Stashed changes
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hot A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfM-A6-IBz">
@@ -610,7 +733,11 @@
                                         <rect key="frame" x="0.0" y="270" width="375" height="284"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6LN-xp-7VV" id="clw-F2-xJJ">
+<<<<<<< Updated upstream
                                             <frame key="frameInset" width="375" height="283"/>
+=======
+                                            <frame key="frameInset" width="375" height="283.5"/>
+>>>>>>> Stashed changes
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hot Q" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzS-71-zUH">
@@ -658,7 +785,11 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iDZ-vK-BYw" id="CTT-pU-yIk">
+<<<<<<< Updated upstream
                                             <frame key="frameInset" width="375" height="43"/>
+=======
+                                            <frame key="frameInset" width="375" height="43.5"/>
+>>>>>>> Stashed changes
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uk0-q9-vnS">
@@ -685,10 +816,10 @@
             </objects>
             <point key="canvasLocation" x="2678" y="1999"/>
         </scene>
-        <!--View Controller-->
+        <!--Notification Content-->
         <scene sceneID="X8C-zw-biI">
             <objects>
-                <viewController id="ze0-1H-Uba" sceneMemberID="viewController">
+                <viewController title="Notification Content" id="ze0-1H-Uba" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bMg-7q-HjS"/>
                         <viewControllerLayoutGuide type="bottom" id="UqP-f8-mdj"/>
@@ -712,12 +843,37 @@
             </objects>
             <point key="canvasLocation" x="2678" y="3016"/>
         </scene>
+<<<<<<< Updated upstream
+=======
+        <!--Pre-nav-->
+        <scene sceneID="CYs-LC-7zN">
+            <objects>
+                <navigationController title="Pre-nav" automaticallyAdjustsScrollViewInsets="NO" id="dzw-gD-RdF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4I9-we-KA5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="L6I-Nb-Fs8" kind="relationship" relationship="rootViewController" id="cg7-hP-g8a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UrC-Do-D4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1013" y="-1776"/>
+        </scene>
+>>>>>>> Stashed changes
         <!--Today-nav-->
         <scene sceneID="uqf-oM-tug">
             <objects>
                 <navigationController title="Today-nav" automaticallyAdjustsScrollViewInsets="NO" id="Wo0-GO-XEB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="first" id="cs2-QI-m9n"/>
+                    <tabBarItem key="tabBarItem" title="TodayQ" image="first" selectedImage="first" id="cs2-QI-m9n"/>
                     <toolbarItems/>
+<<<<<<< Updated upstream
+=======
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+>>>>>>> Stashed changes
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="QOh-6o-ykn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -735,8 +891,12 @@
         <scene sceneID="AvT-j4-GO5">
             <objects>
                 <navigationController title="Discover-nav" automaticallyAdjustsScrollViewInsets="NO" id="Imd-j0-z7z" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="dZ6-Hy-lqO"/>
+                    <tabBarItem key="tabBarItem" title="Discover" image="second" id="dZ6-Hy-lqO"/>
                     <toolbarItems/>
+<<<<<<< Updated upstream
+=======
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+>>>>>>> Stashed changes
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="1eH-4j-wji">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -754,8 +914,12 @@
         <scene sceneID="Rkg-wE-duM">
             <objects>
                 <navigationController title="Notification-nav" automaticallyAdjustsScrollViewInsets="NO" id="f72-VQ-kt7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Dsb-Vf-wn5"/>
+                    <tabBarItem key="tabBarItem" title="Notification" image="first" id="Dsb-Vf-wn5"/>
                     <toolbarItems/>
+<<<<<<< Updated upstream
+=======
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+>>>>>>> Stashed changes
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="e7G-ST-WrP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -792,8 +956,12 @@
         <scene sceneID="GdM-oB-JRZ">
             <objects>
                 <navigationController title="Account-nav" automaticallyAdjustsScrollViewInsets="NO" id="cHO-63-br7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ao0-FC-Fz1"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="second" id="ao0-FC-Fz1"/>
                     <toolbarItems/>
+<<<<<<< Updated upstream
+=======
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+>>>>>>> Stashed changes
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qlF-74-yOR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -810,11 +978,27 @@
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+<<<<<<< Updated upstream
         <segue reference="CBi-7S-XpU"/>
         <segue reference="fWE-Ai-PGN"/>
         <segue reference="sTN-P5-M3T"/>
         <segue reference="yxt-gF-4az"/>
+=======
+<<<<<<< Updated upstream
+        <segue reference="yxt-gF-4az"/>
+        <segue reference="sTN-P5-M3T"/>
+        <segue reference="CBi-7S-XpU"/>
+        <segue reference="ZeS-jX-OEP"/>
+=======
+        <segue reference="TAY-8W-Swe"/>
+        <segue reference="CkQ-Fu-mbO"/>
+        <segue reference="jeJ-aJ-dbV"/>
+        <segue reference="WGh-mo-bod"/>
+        <segue reference="hyA-aP-ScG"/>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     </inferredMetricsTieBreakers>
 </document>
