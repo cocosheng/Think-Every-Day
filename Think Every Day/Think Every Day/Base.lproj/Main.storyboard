@@ -193,7 +193,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OneQ" rowHeight="164" id="6oI-Or-67C">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="164"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="164"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6oI-Or-67C" id="g63-jv-lTq">
                                             <frame key="frameInset" width="375" height="163"/>
@@ -328,7 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9jE-sF-nxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1015.2" y="-1030.4347826086957"/>
+            <point key="canvasLocation" x="1788" y="-2539"/>
         </scene>
         <!--SignIn-->
         <scene sceneID="2ZC-oc-YDO">
@@ -364,7 +364,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPi-mY-73F">
-                                <frame key="frameInset" minX="31" minY="502" width="157" height="30"/>
+                                <frame key="frameInset" minX="37" minY="568" width="157" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Forgot your password?"/>
                                 <connections>
@@ -372,7 +372,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOu-iK-YBP">
-                                <frame key="frameInset" minX="239" minY="502" width="57" height="30"/>
+                                <frame key="frameInset" minX="229" minY="568" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
@@ -402,6 +402,22 @@
                                 <frame key="frameInset" minX="147" minY="127" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HK1-sH-3ZX">
+                                <frame key="frameInset" minX="122" minY="506" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="FB"/>
+                                <connections>
+                                    <action selector="FacebookSiginInButtonTapped:" destination="KRh-Oy-coG" eventType="touchDown" id="4mt-4l-zrE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ls1-MZ-v9y">
+                                <frame key="frameInset" minX="219" minY="506" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Google"/>
+                                <connections>
+                                    <action selector="GoogleSignInButtonTapped:" destination="KRh-Oy-coG" eventType="touchDown" id="2Ii-Oo-kVc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -416,7 +432,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bED-d2-OFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="904.79999999999995" y="-1310.1949025487258"/>
+            <point key="canvasLocation" x="1013.6" y="-1776.1619190404799"/>
         </scene>
         <!--sign up-->
         <scene sceneID="tYR-hp-lun">
@@ -500,7 +516,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9aR-ft-tUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1015" y="-265"/>
+            <point key="canvasLocation" x="2618" y="-1776"/>
         </scene>
         <!--Loading-->
         <scene sceneID="1Tl-v2-3Qe">
@@ -571,7 +587,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotA" rowHeight="242" id="4qv-w6-cb4" userLabel="HotA">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="242"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="242"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4qv-w6-cb4" id="SOg-Hu-9yO">
                                             <frame key="frameInset" width="375" height="241"/>
@@ -591,7 +607,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotQ" rowHeight="284" id="6LN-xp-7VV" userLabel="HotQ">
-                                        <rect key="frame" x="0.0" y="334" width="375" height="284"/>
+                                        <rect key="frame" x="0.0" y="270" width="375" height="284"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6LN-xp-7VV" id="clw-F2-xJJ">
                                             <frame key="frameInset" width="375" height="283"/>
@@ -639,7 +655,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="message" id="iDZ-vK-BYw">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iDZ-vK-BYw" id="CTT-pU-yIk">
                                             <frame key="frameInset" width="375" height="43"/>
@@ -796,9 +812,9 @@
         <image name="first" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yxt-gF-4az"/>
-        <segue reference="sTN-P5-M3T"/>
         <segue reference="CBi-7S-XpU"/>
-        <segue reference="ZeS-jX-OEP"/>
+        <segue reference="fWE-Ai-PGN"/>
+        <segue reference="sTN-P5-M3T"/>
+        <segue reference="yxt-gF-4az"/>
     </inferredMetricsTieBreakers>
 </document>
