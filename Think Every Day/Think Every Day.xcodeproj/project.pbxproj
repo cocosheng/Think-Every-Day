@@ -61,15 +61,15 @@
 		8A4C45CF1DA458DB00F5A926 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		8A4C45D31DA45A9D00F5A926 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		8A4C45D71DA47F6800F5A926 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
-		8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Think Every Day/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		8A7878A01D94752F0062EF79 /* Think Every Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Think Every Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A7878A31D94752F0062EF79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A7878A31D94752F0062EF79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Think Every Day/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
 		8A7878A51D94752F0062EF79 /* TodayQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayQuestionViewController.swift; sourceTree = "<group>"; };
 		8A7878A71D94752F0062EF79 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
 		8A7878AA1D94752F0062EF79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8A7878AC1D94752F0062EF79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A7878AC1D94752F0062EF79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Think Every Day/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		8A7878AF1D94752F0062EF79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8A7878B11D94752F0062EF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A7878B11D94752F0062EF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Think Every Day/Info.plist"; sourceTree = SOURCE_ROOT; };
 		8A7878B61D94752F0062EF79 /* Think Every DayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Think Every DayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7878BA1D94752F0062EF79 /* Think_Every_DayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Think_Every_DayTests.swift; sourceTree = "<group>"; };
 		8A7878BC1D94752F0062EF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,14 +77,14 @@
 		8A7878C51D94752F0062EF79 /* Think_Every_DayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Think_Every_DayUITests.swift; sourceTree = "<group>"; };
 		8A7878C71D94752F0062EF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A8DEA071DA4C2F900A1838F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		CE6469511DA193EC00D03D26 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE6469551DA2DF3D00D03D26 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = "Think Every Day/SignInViewController.swift"; sourceTree = "<group>"; };
-		CE6469571DA2DF6300D03D26 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = "Think Every Day/SignUpViewController.swift"; sourceTree = "<group>"; };
-		CE6469591DA2DF9500D03D26 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForgotPasswordViewController.swift; path = "Think Every Day/ForgotPasswordViewController.swift"; sourceTree = "<group>"; };
+		CE6469511DA193EC00D03D26 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "Think Every Day/ViewController.swift"; sourceTree = SOURCE_ROOT; };
+		CE6469551DA2DF3D00D03D26 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = "Think Every Day/SignInViewController.swift"; sourceTree = SOURCE_ROOT; };
+		CE6469571DA2DF6300D03D26 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = "Think Every Day/SignUpViewController.swift"; sourceTree = SOURCE_ROOT; };
+		CE6469591DA2DF9500D03D26 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForgotPasswordViewController.swift; path = "Think Every Day/ForgotPasswordViewController.swift"; sourceTree = SOURCE_ROOT; };
 		CE64695B1DA2E7B200D03D26 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		CE64695D1DA2E7D900D03D26 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		CE7F0F3D1DA5140700ED3799 /* Think Every Day-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Think Every Day-Bridging-Header.h"; sourceTree = "<group>"; };
-		CE92E8521DA1895D00ED3EAE /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		CE92E8521DA1895D00ED3EAE /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "Think Every Day/Utilities.swift"; sourceTree = SOURCE_ROOT; };
 		E8543714E5148043F862FE43 /* Pods-Think Every Day.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Think Every Day.release.xcconfig"; path = "Pods/Target Support Files/Pods-Think Every Day/Pods-Think Every Day.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,13 +134,12 @@
 		8A4C45A41DA42EF200F5A926 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				CE6469571DA2DF6300D03D26 /* SignUpViewController.swift */,
 				CE6469551DA2DF3D00D03D26 /* SignInViewController.swift */,
+				CE6469571DA2DF6300D03D26 /* SignUpViewController.swift */,
 				CE6469591DA2DF9500D03D26 /* ForgotPasswordViewController.swift */,
 			);
 			name = SignIn;
-			path = ..;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		8A4C45A61DA42F4F00F5A926 /* TodayQ */ = {
 			isa = PBXGroup;
@@ -227,7 +226,7 @@
 				CE7F0F3D1DA5140700ED3799 /* Think Every Day-Bridging-Header.h */,
 			);
 			path = "Think Every Day";
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		8A7878B91D94752F0062EF79 /* Think Every DayTests */ = {
 			isa = PBXGroup;

@@ -29,13 +29,16 @@ class ForgotPasswordViewController: UIViewController {
         FIRAuth.auth()?.sendPasswordReset(withEmail: email!, completion: {
             error in
             if let error = error {
-                print("Email address is incorrect.")
+                NSLog("debug Email address is incorrect.")
                 return
             }
             // TODO: Show alert.
-            print("Password reset email sent.")
-            self.performSegue(withIdentifier: "forgotPasswordResetSignIn", sender: self)
+            NSLog("debug Password reset email sent.")
+            self.performSegue(withIdentifier: "ForgotPasswordToSignIn", sender: self)
         })
+    }
+    @IBAction func HaveAccountButtonTapped(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "ForgotPasswordToSignIn", sender: self)
     }
 
 }

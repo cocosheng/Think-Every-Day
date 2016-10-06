@@ -31,31 +31,32 @@ class SignUpViewController: UIViewController {
         if PasswordSignUp.text != PasswordCheckSignUp.text {
             // TODO: show alert for dismatched passwords.
             
-            print("Your passwords do not match.")
+            NSLog("debug Your passwords do not match.")
             return
         }
         FIRAuth.auth()?.createUser(withEmail: UsernameSignUp.text!, password: PasswordSignUp.text!, completion: {
                 user, error in
             if error != nil {
                 // Show alert user already exists.
-                print("User email already registered.")
+                NSLog("debug User email already registered.")
                 return
             }
             let user = FIRAuth.auth()?.currentUser
             user?.sendEmailVerification(completion: { error in
                 if let error = error {
                     // Show alert user email invalid.
-                    print("User email invalid.")
+                    NSLog("debug User email invalid.")
+                    return
                 } else {
                     // Show alert email sent.
-                    print("Email sent")
+                    NSLog("debug Email sent")
                 }
             })
-            // directly go to main view
-            // // should go to sign in page and treat as normal signin user.
-            //                self.performSegue(withIdentifier: "SignedUp", sender: self)
             self.performSegue(withIdentifier: "SignedUpToSignIn",sender: self)
-            print("User created, now go to sign in page")
+            NSLog("debug User created, now go to sign in page")
         })
+    }
+    @IBAction func HaveAccountButtonTapped(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "SignedUpToSignIn", sender: self)
     }
 }

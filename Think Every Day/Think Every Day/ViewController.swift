@@ -22,10 +22,10 @@ class ViewController: UIViewController {
 
     // Go to signIn page when user not signed in.
     override func viewDidAppear(_ animated: Bool) {
-        // If user not signed in.
         // TODO: Check user signed in boolean.
-        if (false) {
+        if (true) {
             self.performSegue(withIdentifier: "signIn", sender:self);
+            return
         }
         self.performSegue(withIdentifier: "mainMenu", sender: self);
     }
