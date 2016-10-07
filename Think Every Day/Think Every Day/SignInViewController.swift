@@ -65,7 +65,6 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
             // Successfully signed up. Go to main menu.
             self.performSegue(withIdentifier: "SignedUpToMainMenu",sender: self)
             NSLog("debug Successful signed in.")
-            self.dismiss(animated: true, completion: nil)
         })
     
     }
