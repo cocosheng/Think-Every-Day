@@ -719,7 +719,7 @@
                 <navigationController title="Today-nav" automaticallyAdjustsScrollViewInsets="NO" id="Wo0-GO-XEB" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" selectedImage="first" id="cs2-QI-m9n"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="QOh-6o-ykn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QOh-6o-ykn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -738,7 +738,7 @@
                 <navigationController title="Discover-nav" automaticallyAdjustsScrollViewInsets="NO" id="Imd-j0-z7z" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="dZ6-Hy-lqO"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="1eH-4j-wji">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1eH-4j-wji">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -757,7 +757,7 @@
                 <navigationController title="Notification-nav" automaticallyAdjustsScrollViewInsets="NO" id="f72-VQ-kt7" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Dsb-Vf-wn5"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="e7G-ST-WrP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e7G-ST-WrP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -795,7 +795,7 @@
                 <navigationController title="Account-nav" automaticallyAdjustsScrollViewInsets="NO" id="cHO-63-br7" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="ao0-FC-Fz1"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qlF-74-yOR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qlF-74-yOR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
