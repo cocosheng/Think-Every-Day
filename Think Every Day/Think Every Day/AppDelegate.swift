@@ -26,7 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
-      @available(iOS 9.0, *)
+@available(iOS 9.0, *)
+    // Handle app switching for Google/FB sign in.
     func application(_ application: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any])
         -> Bool {
             return self.application(application,

@@ -407,7 +407,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="FB"/>
                                 <connections>
-                                    <action selector="FacebookSiginInButtonTapped:" destination="KRh-Oy-coG" eventType="touchDown" id="4mt-4l-zrE"/>
+                                    <action selector="FacebookSiginInButtonTapped:" destination="KRh-Oy-coG" eventType="touchDown" id="hXy-4p-gJA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ls1-MZ-v9y">
@@ -425,6 +425,7 @@
                         <outlet property="PasswordTextField" destination="XpT-9a-bRh" id="uC7-Yo-sfc"/>
                         <outlet property="UsernameTextField" destination="dV6-bN-kK5" id="0V1-VG-gfC"/>
                         <outlet property="appIconMainMenu" destination="fFn-Pm-ejG" id="uLH-8F-Ecf"/>
+                        <outlet property="loginButton" destination="HK1-sH-3ZX" id="2LZ-sG-N5U"/>
                         <segue destination="zRO-aJ-HAm" kind="presentation" identifier="SignInToForgotPassword" id="u1C-Ju-KVE"/>
                         <segue destination="bt7-v7-L3W" kind="presentation" identifier="SignInToSignUp" id="qz3-lX-ZQK"/>
                         <segue destination="49e-Tb-3d3" kind="presentation" identifier="SignedUpToMainMenu" id="CBi-7S-XpU"/>

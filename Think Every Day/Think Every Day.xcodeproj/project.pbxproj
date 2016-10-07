@@ -29,6 +29,11 @@
 		8A7878BB1D94752F0062EF79 /* Think_Every_DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878BA1D94752F0062EF79 /* Think_Every_DayTests.swift */; };
 		8A7878C61D94752F0062EF79 /* Think_Every_DayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878C51D94752F0062EF79 /* Think_Every_DayUITests.swift */; };
 		8A8DEA081DA4C2F900A1838F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DEA071DA4C2F900A1838F /* User.swift */; };
+		CE506EB21DA79C1800D70B08 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE506EAE1DA79C1800D70B08 /* Bolts.framework */; };
+		CE506EB31DA79C1800D70B08 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE506EAF1DA79C1800D70B08 /* FBSDKCoreKit.framework */; };
+		CE506EB41DA79C1800D70B08 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE506EB01DA79C1800D70B08 /* FBSDKLoginKit.framework */; };
+		CE506EB51DA79C1800D70B08 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE506EB11DA79C1800D70B08 /* FBSDKShareKit.framework */; };
+		CE506EB71DA79C3000D70B08 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE506EB61DA79C3000D70B08 /* FBSDKLoginKit.framework */; };
 		CE6469521DA193EC00D03D26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6469511DA193EC00D03D26 /* ViewController.swift */; };
 		CE6469561DA2DF3D00D03D26 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6469551DA2DF3D00D03D26 /* SignInViewController.swift */; };
 		CE6469581DA2DF6300D03D26 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6469571DA2DF6300D03D26 /* SignUpViewController.swift */; };
@@ -77,6 +82,11 @@
 		8A7878C51D94752F0062EF79 /* Think_Every_DayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Think_Every_DayUITests.swift; sourceTree = "<group>"; };
 		8A7878C71D94752F0062EF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A8DEA071DA4C2F900A1838F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE506EAE1DA79C1800D70B08 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../../../Documents/FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
+		CE506EAF1DA79C1800D70B08 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		CE506EB01DA79C1800D70B08 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		CE506EB11DA79C1800D70B08 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		CE506EB61DA79C3000D70B08 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		CE6469511DA193EC00D03D26 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "Think Every Day/ViewController.swift"; sourceTree = SOURCE_ROOT; };
 		CE6469551DA2DF3D00D03D26 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = "Think Every Day/SignInViewController.swift"; sourceTree = SOURCE_ROOT; };
 		CE6469571DA2DF6300D03D26 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = "Think Every Day/SignUpViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -94,6 +104,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C0C1357A26AC321C2A6F2D0 /* Pods_Think_Every_Day.framework in Frameworks */,
+				CE506EB51DA79C1800D70B08 /* FBSDKShareKit.framework in Frameworks */,
+				CE506EB71DA79C3000D70B08 /* FBSDKLoginKit.framework in Frameworks */,
+				CE506EB41DA79C1800D70B08 /* FBSDKLoginKit.framework in Frameworks */,
+				CE506EB31DA79C1800D70B08 /* FBSDKCoreKit.framework in Frameworks */,
+				CE506EB21DA79C1800D70B08 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +142,11 @@
 			isa = PBXGroup;
 			children = (
 				2C2D27B0746DC62297516473 /* Pods_Think_Every_Day.framework */,
+				CE506EB61DA79C3000D70B08 /* FBSDKLoginKit.framework */,
+				CE506EAE1DA79C1800D70B08 /* Bolts.framework */,
+				CE506EAF1DA79C1800D70B08 /* FBSDKCoreKit.framework */,
+				CE506EB01DA79C1800D70B08 /* FBSDKLoginKit.framework */,
+				CE506EB11DA79C1800D70B08 /* FBSDKShareKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -611,6 +631,29 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Bolts\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKCoreKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKLoginKit\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/FirebaseAuth/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/FirebaseDatabase/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseDatabaseUI/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseFacebookAuthUI/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseGoogleAuthUI/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleAuthUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleInterchangeUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleNetworkingUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleSignIn/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleSymbolUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleUtilities/Frameworks/frameworks\"",
+					"~/Documents/FacebookSDK",
+				);
 				INFOPLIST_FILE = "Think Every Day/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = .com.ThinkEveryDay.ThinkEveryDay;
@@ -628,6 +671,29 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Bolts\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKCoreKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKLoginKit\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/FirebaseAuth/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/FirebaseDatabase/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseAuthUI/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseDatabaseUI/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseFacebookAuthUI/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseUI/FirebaseUIFrameworks/FirebaseGoogleAuthUI/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleAuthUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleInterchangeUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleNetworkingUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleSignIn/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleSymbolUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleUtilities/Frameworks/frameworks\"",
+					"~/Documents/FacebookSDK",
+				);
 				INFOPLIST_FILE = "Think Every Day/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = .com.ThinkEveryDay.ThinkEveryDay;

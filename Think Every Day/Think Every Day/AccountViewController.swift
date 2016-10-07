@@ -20,7 +20,8 @@ class AccountViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    // user info: https://firebase.google.com/docs/auth/ios/manage-users
+    
+    // user info example: https://firebase.google.com/docs/auth/ios/manage-users
 //    if let user = FIRAuth.auth()?.currentUser {
 //        let name = user.displayName
 //        let email = user.email

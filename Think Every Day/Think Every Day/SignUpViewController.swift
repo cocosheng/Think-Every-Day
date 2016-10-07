@@ -28,6 +28,13 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func SignUpButton(_ sender: UIButton) {
+        if UsernameSignUp.text == "" {
+            NSLog("debug Username cannot be empty")
+            return
+        } else if PasswordSignUp.text == "" || PasswordCheckSignUp.text == "" {
+            NSLog("debug Password cannot be empty")
+            return
+        }
         if PasswordSignUp.text != PasswordCheckSignUp.text {
             // TODO: show alert for dismatched passwords.
             

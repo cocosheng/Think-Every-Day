@@ -24,11 +24,18 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
     
     @IBOutlet weak var appIconMainMenu: UIImageView!
     
+    // fb button.
+    @IBOutlet weak var loginButton: FBSDKLoginButton!
+
+    //    @IBOutlet weak var googleSignInButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.appIconMainMenu.image = #imageLiteral(resourceName: "AppIconMainMenu")
         // TODO: Google sign-in button.
+        
+        // TODO: FB sign-in button.
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,6 +45,13 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
 
     @IBAction func SignInButtonTapped(_ sender: UIButton) {
         NSLog("debug sign in tapped")
+        if UsernameTextField.text == "" {
+            NSLog("debug Email address cannot be empty")
+            return
+        } else if PasswordTextField.text == "" {
+            NSLog("debug Password cannot be empty")
+            return
+        }
         // // can get the user's account data from the user object that's passed to the callback method
         FIRAuth.auth()?.signIn(withEmail: UsernameTextField.text!, password: PasswordTextField.text!, completion: {
             user, error in
@@ -55,6 +69,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
         })
     
     }
+    
     @IBAction func RegisterButtonTapped(_ sender: UIButton) {
         self.performSegue(withIdentifier: "SignInToSignUp", sender: self)
     }
@@ -62,13 +77,16 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
     @IBAction func ForgotPasswordTapped(_ sender: UIButton) {
         self.performSegue(withIdentifier: "SignInToForgotPassword", sender: self)
     }
+
+    
+    @IBAction func FacebookSiginInButtonTapped(_ sender: FBSDKLoginButton) {
+        let loginButton = FBSDKLoginButton()
+//        loginButton.delegate = self.loginButton as! FBSDKLoginButtonDelegate!
+        facebookFirebaseLogin()
+    }
     
     @IBAction func GoogleSignInButtonTapped(_ sender: UIButton) {
         googleFirebaseLogin()
-    }
-    
-    @IBAction func FacebookSiginInButtonTapped(_ sender: UIButton) {
-        facebookFirebaseLogin()
     }
     
     func googleFirebaseLogin() {
@@ -82,12 +100,18 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
         let loginManager = FBSDKLoginManager()
         loginManager.logIn(withReadPermissions: ["email"], from: self, handler: { (result, error) in
             if let error = error {
+                // TODO: alert.
                 NSLog(error.localizedDescription)
             } else if result!.isCancelled {
+                // TODO: alert.
                 NSLog("debug FBLogin cancelled")
             } else {
                 let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
                 self.firebaseLogin(credential)
+            }
+            // Already signed in.
+            if let user = FIRAuth.auth()?.currentUser {
+                self.performSegue(withIdentifier: "SignedUpToMainMenu", sender: self)
             }
         })
     }
@@ -97,6 +121,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
         if let user = FIRAuth.auth()?.currentUser {
             user.link(with: credential) { (user, error) in
                 if let error = error {
+                    // TODO: alert.
                     NSLog(error.localizedDescription)
                     return
                 }
@@ -105,6 +130,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
         } else {
             FIRAuth.auth()?.signIn(with: credential) { (user, error) in
                 if let error = error {
+                    // TODO: alert.
                     NSLog(error.localizedDescription)
                     return
                 }
@@ -116,6 +142,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
     // GIDSignInDelegate function. For Google Signin.
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
         if let error = error {
+            // TODO: alert.
             NSLog(error.localizedDescription)
             return
         }
