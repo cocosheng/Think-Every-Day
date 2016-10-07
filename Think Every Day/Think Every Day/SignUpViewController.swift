@@ -44,8 +44,9 @@ class SignUpViewController: UIViewController {
         FIRAuth.auth()?.createUser(withEmail: UsernameSignUp.text!, password: PasswordSignUp.text!, completion: {
                 user, error in
             if error != nil {
+                NSLog(error as! String)
                 // Show alert user already exists.
-                NSLog("debug User email already registered.")
+//                NSLog("debug User email already registered.")
                 return
             }
             let user = FIRAuth.auth()?.currentUser

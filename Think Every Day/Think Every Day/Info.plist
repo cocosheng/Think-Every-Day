@@ -96,5 +96,6 @@
     </array>
     <key>NSPhotoLibraryUsageDescription</key>
     <string>{Human-readable reason for photo access}</string>
+    
 </dict>
 </plist>
