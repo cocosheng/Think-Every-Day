@@ -656,7 +656,7 @@
 				);
 				INFOPLIST_FILE = "Think Every Day/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = .com.ThinkEveryDay.ThinkEveryDay;
+				PRODUCT_BUNDLE_IDENTIFIER = .com.thinkeveryday.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Think Every Day/Think Every Day-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -696,7 +696,7 @@
 				);
 				INFOPLIST_FILE = "Think Every Day/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = .com.ThinkEveryDay.ThinkEveryDay;
+				PRODUCT_BUNDLE_IDENTIFIER = .com.thinkeveryday.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Think Every Day/Think Every Day-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
