@@ -1,14 +1,4 @@
 PODS:
-  - Bolts (1.8.4):
-    - Bolts/AppLinks (= 1.8.4)
-    - Bolts/Tasks (= 1.8.4)
-  - Bolts/AppLinks (1.8.4):
-    - Bolts/Tasks
-  - Bolts/Tasks (1.8.4)
-  - FBSDKCoreKit (4.16.0):
-    - Bolts (~> 1.7)
-  - FBSDKLoginKit (4.16.0):
-    - FBSDKCoreKit
   - Firebase (3.7.0):
     - Firebase/Core (= 3.7.0)
   - Firebase/Auth (3.7.0):
@@ -36,23 +26,6 @@ PODS:
   - FirebaseDatabase (3.0.3):
     - FirebaseAnalytics (~> 3.3)
   - FirebaseInstanceID (1.0.8)
-  - FirebaseUI (0.5.5):
-    - FirebaseUI/All (= 0.5.5)
-  - FirebaseUI/All (0.5.5):
-    - FirebaseUI/Auth
-    - FirebaseUI/Database
-    - FirebaseUI/Facebook
-    - FirebaseUI/Google
-  - FirebaseUI/Auth (0.5.5):
-    - Firebase/Auth
-  - FirebaseUI/Database (0.5.5):
-    - Firebase/Database
-  - FirebaseUI/Facebook (0.5.5):
-    - FBSDKLoginKit (~> 4.0)
-    - FirebaseUI/Auth
-  - FirebaseUI/Google (0.5.5):
-    - FirebaseUI/Auth
-    - GoogleSignIn (~> 4.0)
   - GoogleAppUtilities (1.1.2):
     - GoogleSymbolUtilities (~> 1.1)
   - GoogleAuthUtilities (2.0.2):
@@ -75,19 +48,15 @@ DEPENDENCIES:
   - Firebase
   - Firebase/Auth
   - Firebase/Database
-  - FirebaseUI (~> 0.5)
+  - GoogleSignIn
 
 SPEC CHECKSUMS:
-  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
-  FBSDKCoreKit: 7a6baaed4a2b2a244ba253346713bdbc74df135b
-  FBSDKLoginKit: 9a514a55a7d05190f64d4ef09502737588b5b561
   Firebase: 3875e140d77c7572c6d4852faf94144ffcdb0704
   FirebaseAnalytics: 02d0aed8c6246a9c8683ac3e9825c67ceb657bde
   FirebaseAuth: 75a062bbf2d3c97d1e6e55bbc110e13a6853e25d
   FirebaseCore: 5a885548bbc5f0c410b04f8e9ac9d73ff1221907
   FirebaseDatabase: 750a4a0fe18ef114318876fd654b2d9c671e0992
   FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
-  FirebaseUI: bf558c64a5345943c604ebc61eae86661b24d2f3
   GoogleAppUtilities: a8a552aa74f6597f805e45b5a3962766c3134973
   GoogleAuthUtilities: ccad2e0a9284699973ff57c0dd24c3893657fda4
   GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
@@ -96,6 +65,6 @@ SPEC CHECKSUMS:
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleUtilities: 8bbc733218aad26306f9d4a253823986110e3358
 
-PODFILE CHECKSUM: 55d052cdd33f2ada24ef52970ce4d639da0ecc3f
+PODFILE CHECKSUM: 03c618af6ee8b0e231dedda13872f0e556d987ac
 
 COCOAPODS: 1.0.1

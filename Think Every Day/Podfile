@@ -6,6 +6,6 @@ target 'Think Every Day' do
   use_frameworks!
   pod 'Firebase'
   pod 'Firebase/Auth'
-  pod ‘GoogleSignIn’
+  pod 'GoogleSignIn'
   pod 'Firebase/Database'
 end
