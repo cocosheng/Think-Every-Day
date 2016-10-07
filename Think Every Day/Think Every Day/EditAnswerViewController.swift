@@ -2,30 +2,13 @@
 //  EditAnswerViewController.swift
 //  Think Every Day
 //
-<<<<<<< Updated upstream
 //  Created by Ke Sheng on 10/5/16.
-=======
-<<<<<<< HEAD
-//  Created by Ke Sheng on 10/7/16.
-=======
-//  Created by Ke Sheng on 10/5/16.
->>>>>>> origin/master
->>>>>>> Stashed changes
 //  Copyright © 2016 TED. All rights reserved.
 //
 
 import UIKit
 
 class EditAnswerViewController: UIViewController {
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-=======
->>>>>>> Stashed changes
     
     var submitted = false
     var savedForLaterEdit = false
@@ -40,10 +23,6 @@ class EditAnswerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-<<<<<<< Updated upstream
-=======
->>>>>>> origin/master
->>>>>>> Stashed changes
         // Do any additional setup after loading the view.
     }
 
@@ -52,11 +31,6 @@ class EditAnswerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
     @IBAction func SaveForLaterEdit(_ sender: UIButton) {
         savedForLaterEdit = true
         isCurrentlyEditing = false
@@ -74,10 +48,6 @@ class EditAnswerViewController: UIViewController {
             isCurrentlyEditing = true
         }
     }
-<<<<<<< Updated upstream
-=======
->>>>>>> origin/master
->>>>>>> Stashed changes
 
     /*
     // MARK: - Navigation
