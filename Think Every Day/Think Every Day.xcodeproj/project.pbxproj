@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C0C1357A26AC321C2A6F2D0 /* Pods_Think_Every_Day.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2D27B0746DC62297516473 /* Pods_Think_Every_Day.framework */; };
 		8A252E611DA83191000F0FF6 /* CustomQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A252E601DA83191000F0FF6 /* CustomQuestionViewController.swift */; };
+		8A252E631DA83283000F0FF6 /* EditAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A252E621DA83283000F0FF6 /* EditAnswerViewController.swift */; };
 		8A4C45D01DA458DB00F5A926 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45CF1DA458DB00F5A926 /* Question.swift */; };
 		8A4C45D11DA458DB00F5A926 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45CF1DA458DB00F5A926 /* Question.swift */; };
 		8A4C45D21DA458DB00F5A926 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45CF1DA458DB00F5A926 /* Question.swift */; };
@@ -65,6 +66,7 @@
 		07A5569EC9AB30E4DEE29451 /* Pods-Think Every Day.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Think Every Day.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Think Every Day/Pods-Think Every Day.debug.xcconfig"; sourceTree = "<group>"; };
 		2C2D27B0746DC62297516473 /* Pods_Think_Every_Day.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Think_Every_Day.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A252E601DA83191000F0FF6 /* CustomQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomQuestionViewController.swift; sourceTree = "<group>"; };
+		8A252E621DA83283000F0FF6 /* EditAnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAnswerViewController.swift; sourceTree = "<group>"; };
 		8A4C45CF1DA458DB00F5A926 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		8A4C45D31DA45A9D00F5A926 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		8A4C45D71DA47F6800F5A926 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			children = (
 				8A7878A51D94752F0062EF79 /* TodayQuestionViewController.swift */,
 				8A252E601DA83191000F0FF6 /* CustomQuestionViewController.swift */,
+				8A252E621DA83283000F0FF6 /* EditAnswerViewController.swift */,
 			);
 			name = TodayQ;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				8A4C45D81DA47F6800F5A926 /* Tag.swift in Sources */,
 				8A4C45D01DA458DB00F5A926 /* Question.swift in Sources */,
 				8A252E611DA83191000F0FF6 /* CustomQuestionViewController.swift in Sources */,
+				8A252E631DA83283000F0FF6 /* EditAnswerViewController.swift in Sources */,
 				8A7878A61D94752F0062EF79 /* TodayQuestionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
