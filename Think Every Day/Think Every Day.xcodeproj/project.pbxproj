@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		4C0C1357A26AC321C2A6F2D0 /* Pods_Think_Every_Day.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2D27B0746DC62297516473 /* Pods_Think_Every_Day.framework */; };
+		8A4C45D01DA458DB00F5A926 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45CF1DA458DB00F5A926 /* Question.swift */; };
+		8A4C45D11DA458DB00F5A926 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45CF1DA458DB00F5A926 /* Question.swift */; };
+		8A4C45D21DA458DB00F5A926 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45CF1DA458DB00F5A926 /* Question.swift */; };
+		8A4C45D41DA45A9D00F5A926 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45D31DA45A9D00F5A926 /* Answer.swift */; };
+		8A4C45D51DA45A9D00F5A926 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45D31DA45A9D00F5A926 /* Answer.swift */; };
+		8A4C45D61DA45A9D00F5A926 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45D31DA45A9D00F5A926 /* Answer.swift */; };
+		8A4C45D81DA47F6800F5A926 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45D71DA47F6800F5A926 /* Tag.swift */; };
+		8A4C45D91DA47F6800F5A926 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45D71DA47F6800F5A926 /* Tag.swift */; };
+		8A4C45DA1DA47F6800F5A926 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45D71DA47F6800F5A926 /* Tag.swift */; };
 		8A4C45E01DA484E100F5A926 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */; };
 		8A4C45E11DA484E100F5A926 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */; };
 		8A4C45E21DA484E100F5A926 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */; };
@@ -19,22 +28,7 @@
 		8A7878B01D94752F0062EF79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7878AE1D94752F0062EF79 /* LaunchScreen.storyboard */; };
 		8A7878BB1D94752F0062EF79 /* Think_Every_DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878BA1D94752F0062EF79 /* Think_Every_DayTests.swift */; };
 		8A7878C61D94752F0062EF79 /* Think_Every_DayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878C51D94752F0062EF79 /* Think_Every_DayUITests.swift */; };
-		8ADF4D181DA52CB600F34AEE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4D171DA52CB600F34AEE /* Question.swift */; };
-		8ADF4D191DA52CB600F34AEE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4D171DA52CB600F34AEE /* Question.swift */; };
-		8ADF4D1A1DA52CB600F34AEE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4D171DA52CB600F34AEE /* Question.swift */; };
-		8ADF4D1C1DA52CF800F34AEE /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4D1B1DA52CF800F34AEE /* Answer.swift */; };
-		8ADF4D1D1DA52CF800F34AEE /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4D1B1DA52CF800F34AEE /* Answer.swift */; };
-		8ADF4D1E1DA52CF800F34AEE /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4D1B1DA52CF800F34AEE /* Answer.swift */; };
-		8ADF4D241DA52DDF00F34AEE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4D231DA52DDF00F34AEE /* User.swift */; };
-		8ADF4D251DA52DDF00F34AEE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4D231DA52DDF00F34AEE /* User.swift */; };
-		8ADF4D261DA52DDF00F34AEE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4D231DA52DDF00F34AEE /* User.swift */; };
-		8ADF4D281DA53BB600F34AEE /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4D271DA53BB600F34AEE /* Tag.swift */; };
-		8ADF4D291DA53BB600F34AEE /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4D271DA53BB600F34AEE /* Tag.swift */; };
-		8ADF4D2A1DA53BB600F34AEE /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4D271DA53BB600F34AEE /* Tag.swift */; };
-		8ADF4D2C1DA54F8F00F34AEE /* EditAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4D2B1DA54F8F00F34AEE /* EditAnswerViewController.swift */; };
-		8ADF4D2E1DA5A40600F34AEE /* CreateCustomQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4D2D1DA5A40600F34AEE /* CreateCustomQuestionViewController.swift */; };
-		8ADF4D2F1DA5A40600F34AEE /* CreateCustomQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4D2D1DA5A40600F34AEE /* CreateCustomQuestionViewController.swift */; };
-		8ADF4D301DA5A40600F34AEE /* CreateCustomQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF4D2D1DA5A40600F34AEE /* CreateCustomQuestionViewController.swift */; };
+		8A8DEA081DA4C2F900A1838F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DEA071DA4C2F900A1838F /* User.swift */; };
 		CE6469521DA193EC00D03D26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6469511DA193EC00D03D26 /* ViewController.swift */; };
 		CE6469561DA2DF3D00D03D26 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6469551DA2DF3D00D03D26 /* SignInViewController.swift */; };
 		CE6469581DA2DF6300D03D26 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6469571DA2DF6300D03D26 /* SignUpViewController.swift */; };
@@ -64,14 +58,10 @@
 /* Begin PBXFileReference section */
 		07A5569EC9AB30E4DEE29451 /* Pods-Think Every Day.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Think Every Day.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Think Every Day/Pods-Think Every Day.debug.xcconfig"; sourceTree = "<group>"; };
 		2C2D27B0746DC62297516473 /* Pods_Think_Every_Day.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Think_Every_Day.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-<<<<<<< Updated upstream
 		8A4C45CF1DA458DB00F5A926 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		8A4C45D31DA45A9D00F5A926 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		8A4C45D71DA47F6800F5A926 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Think Every Day/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-=======
-		8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
->>>>>>> Stashed changes
 		8A7878A01D94752F0062EF79 /* Think Every Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Think Every Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7878A31D94752F0062EF79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Think Every Day/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
 		8A7878A51D94752F0062EF79 /* TodayQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayQuestionViewController.swift; sourceTree = "<group>"; };
@@ -86,24 +76,11 @@
 		8A7878C11D94752F0062EF79 /* Think Every DayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Think Every DayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7878C51D94752F0062EF79 /* Think_Every_DayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Think_Every_DayUITests.swift; sourceTree = "<group>"; };
 		8A7878C71D94752F0062EF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-<<<<<<< Updated upstream
 		8A8DEA071DA4C2F900A1838F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CE6469511DA193EC00D03D26 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "Think Every Day/ViewController.swift"; sourceTree = SOURCE_ROOT; };
 		CE6469551DA2DF3D00D03D26 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = "Think Every Day/SignInViewController.swift"; sourceTree = SOURCE_ROOT; };
 		CE6469571DA2DF6300D03D26 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = "Think Every Day/SignUpViewController.swift"; sourceTree = SOURCE_ROOT; };
 		CE6469591DA2DF9500D03D26 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForgotPasswordViewController.swift; path = "Think Every Day/ForgotPasswordViewController.swift"; sourceTree = SOURCE_ROOT; };
-=======
-		8ADF4D171DA52CB600F34AEE /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		8ADF4D1B1DA52CF800F34AEE /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
-		8ADF4D231DA52DDF00F34AEE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		8ADF4D271DA53BB600F34AEE /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
-		8ADF4D2B1DA54F8F00F34AEE /* EditAnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAnswerViewController.swift; sourceTree = "<group>"; };
-		8ADF4D2D1DA5A40600F34AEE /* CreateCustomQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCustomQuestionViewController.swift; sourceTree = "<group>"; };
-		CE6469511DA193EC00D03D26 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE6469551DA2DF3D00D03D26 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = "Think Every Day/SignInViewController.swift"; sourceTree = "<group>"; };
-		CE6469571DA2DF6300D03D26 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = "Think Every Day/SignUpViewController.swift"; sourceTree = "<group>"; };
-		CE6469591DA2DF9500D03D26 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForgotPasswordViewController.swift; path = "Think Every Day/ForgotPasswordViewController.swift"; sourceTree = "<group>"; };
->>>>>>> Stashed changes
 		CE64695B1DA2E7B200D03D26 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		CE64695D1DA2E7D900D03D26 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		CE7F0F3D1DA5140700ED3799 /* Think Every Day-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Think Every Day-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -168,8 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				8A7878A51D94752F0062EF79 /* TodayQuestionViewController.swift */,
-				8ADF4D2B1DA54F8F00F34AEE /* EditAnswerViewController.swift */,
-				8ADF4D2D1DA5A40600F34AEE /* CreateCustomQuestionViewController.swift */,
 			);
 			name = TodayQ;
 			sourceTree = "<group>";
@@ -201,10 +176,10 @@
 		8A4C45CE1DA4585E00F5A926 /* AppWideObjects */ = {
 			isa = PBXGroup;
 			children = (
-				8ADF4D171DA52CB600F34AEE /* Question.swift */,
-				8ADF4D1B1DA52CF800F34AEE /* Answer.swift */,
-				8ADF4D231DA52DDF00F34AEE /* User.swift */,
-				8ADF4D271DA53BB600F34AEE /* Tag.swift */,
+				8A4C45CF1DA458DB00F5A926 /* Question.swift */,
+				8A4C45D31DA45A9D00F5A926 /* Answer.swift */,
+				8A4C45D71DA47F6800F5A926 /* Tag.swift */,
+				8A8DEA071DA4C2F900A1838F /* User.swift */,
 			);
 			name = AppWideObjects;
 			sourceTree = "<group>";
@@ -465,19 +440,17 @@
 				CE64695A1DA2DF9500D03D26 /* ForgotPasswordViewController.swift in Sources */,
 				CE6469521DA193EC00D03D26 /* ViewController.swift in Sources */,
 				CE6469581DA2DF6300D03D26 /* SignUpViewController.swift in Sources */,
-				8ADF4D1C1DA52CF800F34AEE /* Answer.swift in Sources */,
-				8ADF4D2C1DA54F8F00F34AEE /* EditAnswerViewController.swift in Sources */,
+				8A4C45D41DA45A9D00F5A926 /* Answer.swift in Sources */,
 				8A7878A81D94752F0062EF79 /* DiscoveryViewController.swift in Sources */,
-				8ADF4D241DA52DDF00F34AEE /* User.swift in Sources */,
 				CE6469561DA2DF3D00D03D26 /* SignInViewController.swift in Sources */,
+				8A8DEA081DA4C2F900A1838F /* User.swift in Sources */,
 				CE64695C1DA2E7B200D03D26 /* NotificationViewController.swift in Sources */,
-				8ADF4D2E1DA5A40600F34AEE /* CreateCustomQuestionViewController.swift in Sources */,
 				CE64695E1DA2E7D900D03D26 /* AccountViewController.swift in Sources */,
 				8A7878A41D94752F0062EF79 /* AppDelegate.swift in Sources */,
-				8ADF4D281DA53BB600F34AEE /* Tag.swift in Sources */,
 				CE92E8531DA1895D00ED3EAE /* Utilities.swift in Sources */,
+				8A4C45D81DA47F6800F5A926 /* Tag.swift in Sources */,
+				8A4C45D01DA458DB00F5A926 /* Question.swift in Sources */,
 				8A7878A61D94752F0062EF79 /* TodayQuestionViewController.swift in Sources */,
-				8ADF4D181DA52CB600F34AEE /* Question.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,12 +458,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4C45D51DA45A9D00F5A926 /* Answer.swift in Sources */,
+				8A4C45D91DA47F6800F5A926 /* Tag.swift in Sources */,
 				8A7878BB1D94752F0062EF79 /* Think_Every_DayTests.swift in Sources */,
-				8ADF4D251DA52DDF00F34AEE /* User.swift in Sources */,
-				8ADF4D291DA53BB600F34AEE /* Tag.swift in Sources */,
-				8ADF4D191DA52CB600F34AEE /* Question.swift in Sources */,
-				8ADF4D1D1DA52CF800F34AEE /* Answer.swift in Sources */,
-				8ADF4D2F1DA5A40600F34AEE /* CreateCustomQuestionViewController.swift in Sources */,
+				8A4C45D11DA458DB00F5A926 /* Question.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,12 +469,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4C45D61DA45A9D00F5A926 /* Answer.swift in Sources */,
+				8A4C45DA1DA47F6800F5A926 /* Tag.swift in Sources */,
 				8A7878C61D94752F0062EF79 /* Think_Every_DayUITests.swift in Sources */,
-				8ADF4D261DA52DDF00F34AEE /* User.swift in Sources */,
-				8ADF4D2A1DA53BB600F34AEE /* Tag.swift in Sources */,
-				8ADF4D1A1DA52CB600F34AEE /* Question.swift in Sources */,
-				8ADF4D1E1DA52CF800F34AEE /* Answer.swift in Sources */,
-				8ADF4D301DA5A40600F34AEE /* CreateCustomQuestionViewController.swift in Sources */,
+				8A4C45D21DA458DB00F5A926 /* Question.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
