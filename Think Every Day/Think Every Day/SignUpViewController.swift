@@ -60,6 +60,10 @@ class SignUpViewController: UIViewController {
                     NSLog("debug Email sent")
                 }
             })
+            
+            // ***** uncomment the next line if you finish the sign up method *****
+            // NetworkingService().saveUserInfo(user: FIRAuth.auth()!.currentUser!, email: self.UsernameSignUp.text!)
+            
             self.performSegue(withIdentifier: "SignedUpToSignIn",sender: self)
             NSLog("debug User created, now go to sign in page")
         })

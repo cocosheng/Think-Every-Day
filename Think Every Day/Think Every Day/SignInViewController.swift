@@ -63,6 +63,11 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
                 return
             }
             // Successfully signed up. Go to main menu.
+            
+            // *****uncomment the NetworkingService method after you implement all the sign up methods,
+            // as saving user info should be placed after the user successfully signed up using whatever method*****
+            NetworkingService().saveUserInfo(user: FIRAuth.auth()!.currentUser!, email: self.UsernameTextField.text!)
+            
             self.performSegue(withIdentifier: "SignedUpToMainMenu",sender: self)
             NSLog("debug Successful signed in.")
         })

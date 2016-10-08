@@ -7,13 +7,31 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
+import FirebaseStorage
 
 class AccountViewController: UIViewController {
+    
+    @IBOutlet weak var usernameLabel: UILabel!
+    
+    var databaseRef: FIRDatabaseReference! {
+        return FIRDatabase.database().reference()
+    }
+    
+    var storageRef: FIRStorageReference! {
+        return FIRStorage.storage().reference()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        
+        let user = FIRAuth.auth()?.currentUser!
+        self.usernameLabel.text = user?.email!
+        
     }
 
     override func didReceiveMemoryWarning() {

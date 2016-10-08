@@ -10,11 +10,18 @@ import Foundation
 import Firebase
 import FirebaseAuth
 import FirebaseDatabase
+import FirebaseStorage // for user image
 
 
 struct NetworkingService {
     
     let databaseRef = FIRDatabase.database().reference()
+    // let storageRef = FIRStorage.storage().reference()
     
+    func saveUserInfo(user: FIRUser, email: String) {
+        
+        databaseRef.child("users").child(user.uid).setValue(["email": email])
+        
+    }
     
 }
