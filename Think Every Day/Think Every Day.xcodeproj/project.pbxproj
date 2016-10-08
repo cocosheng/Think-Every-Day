@@ -8,17 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4C0C1357A26AC321C2A6F2D0 /* Pods_Think_Every_Day.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2D27B0746DC62297516473 /* Pods_Think_Every_Day.framework */; };
+		8A1D26DE1DA852F000D4C08C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D26DD1DA852F000D4C08C /* User.swift */; };
+		8A1D26E01DA8595E00D4C08C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D26DF1DA8595E00D4C08C /* Question.swift */; };
 		8A252E611DA83191000F0FF6 /* CustomQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A252E601DA83191000F0FF6 /* CustomQuestionViewController.swift */; };
 		8A252E631DA83283000F0FF6 /* EditAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A252E621DA83283000F0FF6 /* EditAnswerViewController.swift */; };
-		8A4C45D01DA458DB00F5A926 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45CF1DA458DB00F5A926 /* Question.swift */; };
-		8A4C45D11DA458DB00F5A926 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45CF1DA458DB00F5A926 /* Question.swift */; };
-		8A4C45D21DA458DB00F5A926 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45CF1DA458DB00F5A926 /* Question.swift */; };
-		8A4C45D41DA45A9D00F5A926 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45D31DA45A9D00F5A926 /* Answer.swift */; };
-		8A4C45D51DA45A9D00F5A926 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45D31DA45A9D00F5A926 /* Answer.swift */; };
-		8A4C45D61DA45A9D00F5A926 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45D31DA45A9D00F5A926 /* Answer.swift */; };
-		8A4C45D81DA47F6800F5A926 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45D71DA47F6800F5A926 /* Tag.swift */; };
-		8A4C45D91DA47F6800F5A926 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45D71DA47F6800F5A926 /* Tag.swift */; };
-		8A4C45DA1DA47F6800F5A926 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C45D71DA47F6800F5A926 /* Tag.swift */; };
+		8A252E651DA84897000F0FF6 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A252E641DA84897000F0FF6 /* NetworkingService.swift */; };
 		8A4C45E01DA484E100F5A926 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */; };
 		8A4C45E11DA484E100F5A926 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */; };
 		8A4C45E21DA484E100F5A926 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */; };
@@ -30,7 +24,6 @@
 		8A7878B01D94752F0062EF79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7878AE1D94752F0062EF79 /* LaunchScreen.storyboard */; };
 		8A7878BB1D94752F0062EF79 /* Think_Every_DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878BA1D94752F0062EF79 /* Think_Every_DayTests.swift */; };
 		8A7878C61D94752F0062EF79 /* Think_Every_DayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878C51D94752F0062EF79 /* Think_Every_DayUITests.swift */; };
-		8A8DEA081DA4C2F900A1838F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8DEA071DA4C2F900A1838F /* User.swift */; };
 		8AA684981DA8300700B978F8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA684941DA8300700B978F8 /* Bolts.framework */; };
 		8AA684991DA8300700B978F8 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA684951DA8300700B978F8 /* FBSDKCoreKit.framework */; };
 		8AA6849A1DA8300700B978F8 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA684961DA8300700B978F8 /* FBSDKLoginKit.framework */; };
@@ -65,11 +58,11 @@
 /* Begin PBXFileReference section */
 		07A5569EC9AB30E4DEE29451 /* Pods-Think Every Day.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Think Every Day.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Think Every Day/Pods-Think Every Day.debug.xcconfig"; sourceTree = "<group>"; };
 		2C2D27B0746DC62297516473 /* Pods_Think_Every_Day.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Think_Every_Day.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A1D26DD1DA852F000D4C08C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8A1D26DF1DA8595E00D4C08C /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		8A252E601DA83191000F0FF6 /* CustomQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomQuestionViewController.swift; sourceTree = "<group>"; };
 		8A252E621DA83283000F0FF6 /* EditAnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAnswerViewController.swift; sourceTree = "<group>"; };
-		8A4C45CF1DA458DB00F5A926 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		8A4C45D31DA45A9D00F5A926 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
-		8A4C45D71DA47F6800F5A926 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		8A252E641DA84897000F0FF6 /* NetworkingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Think Every Day/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		8A7878A01D94752F0062EF79 /* Think Every Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Think Every Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7878A31D94752F0062EF79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Think Every Day/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
@@ -85,7 +78,6 @@
 		8A7878C11D94752F0062EF79 /* Think Every DayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Think Every DayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7878C51D94752F0062EF79 /* Think_Every_DayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Think_Every_DayUITests.swift; sourceTree = "<group>"; };
 		8A7878C71D94752F0062EF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A8DEA071DA4C2F900A1838F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8AA684941DA8300700B978F8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../FacebookSDKs-iOS-4.16.0/Bolts.framework"; sourceTree = "<group>"; };
 		8AA684951DA8300700B978F8 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../FacebookSDKs-iOS-4.16.0/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		8AA684961DA8300700B978F8 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../FacebookSDKs-iOS-4.16.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
@@ -199,15 +191,14 @@
 			name = Account;
 			sourceTree = "<group>";
 		};
-		8A4C45CE1DA4585E00F5A926 /* AppWideObjects */ = {
+		8A4C45CE1DA4585E00F5A926 /* AppWide */ = {
 			isa = PBXGroup;
 			children = (
-				8A4C45CF1DA458DB00F5A926 /* Question.swift */,
-				8A4C45D31DA45A9D00F5A926 /* Answer.swift */,
-				8A4C45D71DA47F6800F5A926 /* Tag.swift */,
-				8A8DEA071DA4C2F900A1838F /* User.swift */,
+				8A252E641DA84897000F0FF6 /* NetworkingService.swift */,
+				8A1D26DD1DA852F000D4C08C /* User.swift */,
+				8A1D26DF1DA8595E00D4C08C /* Question.swift */,
 			);
-			name = AppWideObjects;
+			name = AppWide;
 			sourceTree = "<group>";
 		};
 		8A7878971D94752E0062EF79 = {
@@ -243,7 +234,7 @@
 				8A7878AE1D94752F0062EF79 /* LaunchScreen.storyboard */,
 				8A7878B11D94752F0062EF79 /* Info.plist */,
 				8A4C45DF1DA484E100F5A926 /* GoogleService-Info.plist */,
-				8A4C45CE1DA4585E00F5A926 /* AppWideObjects */,
+				8A4C45CE1DA4585E00F5A926 /* AppWide */,
 				8A4C45A41DA42EF200F5A926 /* SignIn */,
 				8A4C45A61DA42F4F00F5A926 /* TodayQ */,
 				8A4C45A81DA42F6E00F5A926 /* Notification */,
@@ -453,7 +444,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -463,19 +454,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A1D26E01DA8595E00D4C08C /* Question.swift in Sources */,
 				CE64695A1DA2DF9500D03D26 /* ForgotPasswordViewController.swift in Sources */,
 				CE6469521DA193EC00D03D26 /* ViewController.swift in Sources */,
 				CE6469581DA2DF6300D03D26 /* SignUpViewController.swift in Sources */,
-				8A4C45D41DA45A9D00F5A926 /* Answer.swift in Sources */,
 				8A7878A81D94752F0062EF79 /* DiscoveryViewController.swift in Sources */,
 				CE6469561DA2DF3D00D03D26 /* SignInViewController.swift in Sources */,
-				8A8DEA081DA4C2F900A1838F /* User.swift in Sources */,
 				CE64695C1DA2E7B200D03D26 /* NotificationViewController.swift in Sources */,
+				8A1D26DE1DA852F000D4C08C /* User.swift in Sources */,
 				CE64695E1DA2E7D900D03D26 /* AccountViewController.swift in Sources */,
 				8A7878A41D94752F0062EF79 /* AppDelegate.swift in Sources */,
 				CE92E8531DA1895D00ED3EAE /* Utilities.swift in Sources */,
-				8A4C45D81DA47F6800F5A926 /* Tag.swift in Sources */,
-				8A4C45D01DA458DB00F5A926 /* Question.swift in Sources */,
+				8A252E651DA84897000F0FF6 /* NetworkingService.swift in Sources */,
 				8A252E611DA83191000F0FF6 /* CustomQuestionViewController.swift in Sources */,
 				8A252E631DA83283000F0FF6 /* EditAnswerViewController.swift in Sources */,
 				8A7878A61D94752F0062EF79 /* TodayQuestionViewController.swift in Sources */,
@@ -486,10 +476,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A4C45D51DA45A9D00F5A926 /* Answer.swift in Sources */,
-				8A4C45D91DA47F6800F5A926 /* Tag.swift in Sources */,
 				8A7878BB1D94752F0062EF79 /* Think_Every_DayTests.swift in Sources */,
-				8A4C45D11DA458DB00F5A926 /* Question.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,10 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A4C45D61DA45A9D00F5A926 /* Answer.swift in Sources */,
-				8A4C45DA1DA47F6800F5A926 /* Tag.swift in Sources */,
 				8A7878C61D94752F0062EF79 /* Think_Every_DayUITests.swift in Sources */,
-				8A4C45D21DA458DB00F5A926 /* Question.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
