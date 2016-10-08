@@ -48,10 +48,10 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
             NSLog("debug Email address cannot be empty")
             return
         } else if PasswordTextField.text == "" {
-            NSLog("debug Password cannot be empty")
+            NSLog("debug Password cannot be empty.")
             return
         }
-
+        
         FIRAuth.auth()?.signIn(withEmail: UsernameTextField.text!, password: PasswordTextField.text!, completion: {
             user, error in
             if error != nil {

@@ -31,8 +31,9 @@ class SignUpViewController: UIViewController {
         if UsernameSignUp.text == "" {
             NSLog("debug Username cannot be empty")
             return
-        } else if PasswordSignUp.text == "" || PasswordCheckSignUp.text == "" {
-            NSLog("debug Password cannot be empty")
+        } else if (PasswordSignUp.text?.characters.count)! < 6 {
+            // Firebase requires password to be at least 6 char.
+            NSLog("debug Password must be at least 6 characters.")
             return
         }
         if PasswordSignUp.text != PasswordCheckSignUp.text {
