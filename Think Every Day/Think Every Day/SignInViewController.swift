@@ -52,7 +52,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
             NSLog("debug Password cannot be empty")
             return
         }
-        // // can get the user's account data from the user object that's passed to the callback method
+
         FIRAuth.auth()?.signIn(withEmail: UsernameTextField.text!, password: PasswordTextField.text!, completion: {
             user, error in
             if error != nil {
@@ -76,7 +76,6 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
     @IBAction func ForgotPasswordTapped(_ sender: UIButton) {
         self.performSegue(withIdentifier: "SignInToForgotPassword", sender: self)
     }
-
     
     @IBAction func FacebookSiginInButtonTapped(_ sender: FBSDKLoginButton) {
         let loginButton = FBSDKLoginButton()
