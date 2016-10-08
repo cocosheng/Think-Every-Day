@@ -46,7 +46,7 @@ class SignUpViewController: UIViewController {
             if error != nil {
                 NSLog(error as! String)
                 // Show alert user already exists.
-//                NSLog("debug User email already registered.")
+                NSLog("debug User email already registered.")
                 return
             }
             let user = FIRAuth.auth()?.currentUser
@@ -61,13 +61,13 @@ class SignUpViewController: UIViewController {
                 }
             })
             
-            // ***** uncomment the next line if you finish the sign up method *****
-            // NetworkingService().saveUserInfo(user: FIRAuth.auth()!.currentUser!, email: self.UsernameSignUp.text!)
+            NetworkingService().saveUserInfo(user: FIRAuth.auth()!.currentUser!, email: self.UsernameSignUp.text!)
             
             self.performSegue(withIdentifier: "SignedUpToSignIn",sender: self)
             NSLog("debug User created, now go to sign in page")
         })
     }
+    
     @IBAction func HaveAccountButtonTapped(_ sender: UIButton) {
         self.performSegue(withIdentifier: "SignedUpToSignIn", sender: self)
     }

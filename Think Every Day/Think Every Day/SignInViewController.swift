@@ -24,18 +24,17 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
     
     @IBOutlet weak var appIconMainMenu: UIImageView!
     
-    // fb button.
-    @IBOutlet weak var loginButton: FBSDKLoginButton!
+    @IBOutlet weak var facebookSignInButton: FBSDKLoginButton!
 
-    //    @IBOutlet weak var googleSignInButton: UIButton!
+    @IBOutlet weak var googleSignInButton: GIDSignInButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.appIconMainMenu.image = #imageLiteral(resourceName: "AppIconMainMenu")
-        // TODO: Google sign-in button.
+        // TODO: customize Google sign-in button.
         
-        // TODO: FB sign-in button.
+        // TODO: customize FB sign-in button.
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,9 +62,6 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
                 return
             }
             // Successfully signed up. Go to main menu.
-            
-            // *****uncomment the NetworkingService method after you implement all the sign up methods,
-            // as saving user info should be placed after the user successfully signed up using whatever method*****
             NetworkingService().saveUserInfo(user: FIRAuth.auth()!.currentUser!, email: self.UsernameTextField.text!)
             
             self.performSegue(withIdentifier: "SignedUpToMainMenu",sender: self)
@@ -83,12 +79,10 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
     }
     
     @IBAction func FacebookSiginInButtonTapped(_ sender: FBSDKLoginButton) {
-        let loginButton = FBSDKLoginButton()
-//        loginButton.delegate = self.loginButton as! FBSDKLoginButtonDelegate!
         facebookFirebaseLogin()
     }
     
-    @IBAction func GoogleSignInButtonTapped(_ sender: UIButton) {
+    @IBAction func GoogleSignInButtonTapped(_ sender: GIDSignInButton) {
         googleFirebaseLogin()
     }
     
@@ -96,7 +90,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
         GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().delegate = self
-        GIDSignIn.sharedInstance().signInSilently()
+        GIDSignIn.sharedInstance().signIn() // signInSilently()
     }
     
     func facebookFirebaseLogin() {

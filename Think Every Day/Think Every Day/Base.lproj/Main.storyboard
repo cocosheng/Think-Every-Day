@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="L6I-Nb-Fs8">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="L6I-Nb-Fs8">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -276,7 +276,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OneQ" rowHeight="164" id="6oI-Or-67C">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="164"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="164"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6oI-Or-67C" id="g63-jv-lTq">
                                             <frame key="frameInset" width="375" height="163"/>
@@ -508,7 +508,8 @@
                         <outlet property="PasswordTextField" destination="XpT-9a-bRh" id="uC7-Yo-sfc"/>
                         <outlet property="UsernameTextField" destination="dV6-bN-kK5" id="0V1-VG-gfC"/>
                         <outlet property="appIconMainMenu" destination="fFn-Pm-ejG" id="uLH-8F-Ecf"/>
-                        <outlet property="loginButton" destination="HK1-sH-3ZX" id="2LZ-sG-N5U"/>
+                        <outlet property="facebookSignInButton" destination="HK1-sH-3ZX" id="vFe-fF-92R"/>
+                        <outlet property="googleSignInButton" destination="ls1-MZ-v9y" id="IoM-2m-bmu"/>
                         <segue destination="zRO-aJ-HAm" kind="presentation" identifier="SignInToForgotPassword" id="u1C-Ju-KVE"/>
                         <segue destination="bt7-v7-L3W" kind="presentation" identifier="SignInToSignUp" id="qz3-lX-ZQK"/>
                         <segue destination="49e-Tb-3d3" kind="presentation" identifier="SignedUpToMainMenu" id="CBi-7S-XpU"/>
@@ -671,7 +672,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotA" rowHeight="242" id="4qv-w6-cb4" userLabel="HotA">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="242"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="242"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4qv-w6-cb4" id="SOg-Hu-9yO">
                                             <frame key="frameInset" width="375" height="241"/>
@@ -691,7 +692,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HotQ" rowHeight="284" id="6LN-xp-7VV" userLabel="HotQ">
-                                        <rect key="frame" x="0.0" y="334" width="375" height="284"/>
+                                        <rect key="frame" x="0.0" y="270" width="375" height="284"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6LN-xp-7VV" id="clw-F2-xJJ">
                                             <frame key="frameInset" width="375" height="283"/>
@@ -739,7 +740,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="message" id="iDZ-vK-BYw">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iDZ-vK-BYw" id="CTT-pU-yIk">
                                             <frame key="frameInset" width="375" height="43"/>
