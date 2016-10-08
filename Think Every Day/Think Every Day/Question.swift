@@ -28,7 +28,7 @@ struct Question {
     var alreadyPosted: Bool!
     var goIntoLibrary: Bool!
     
-    // content: String!, fields: Array<Field>!, userID: String!, tags: Array<Tag>!, key: String!, goIntoLibrary: Bool!
+
     init(content: String!, inspiration: String!, userID: String!, goIntoLibrary: Bool!) {
        
         self.content = content
@@ -66,8 +66,7 @@ struct Question {
     }
     
     func toAnyObject() -> [String: AnyObject] {
-        // "content": content as AnyObject, "fields": fields as AnyObject, "userID" : userID as AnyObject, "tags": tags as AnyObject, "goIntoLibrary": goIntoLibrary as AnyObject
-        return ["content": content as AnyObject, "inspiration": inspiration as AnyObject, "userID" : userID as AnyObject, "goIntoLibrary": goIntoLibrary as AnyObject]
+        return ["content": content as AnyObject, "inspiration": inspiration as AnyObject, "userID" : userID as AnyObject, "goIntoLibrary": goIntoLibrary as AnyObject, ]
     }
     
     

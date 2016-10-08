@@ -46,7 +46,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Today's Q"/>
                                 <connections>
-                                    <action selector="TodayQ:" destination="ufn-11-ZSw" eventType="touchUpInside" id="75G-eQ-fQg"/>
+                                    <action selector="didChooseTodayQ:" destination="ufn-11-ZSw" eventType="touchUpInside" id="rKU-7x-fU9"/>
                                     <segue destination="NBh-9I-ZKy" kind="show" id="sTN-P5-M3T"/>
                                 </connections>
                             </button>
@@ -916,7 +916,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="ZeS-jX-OEP"/>
         <segue reference="CBi-7S-XpU"/>
-        <segue reference="7Jc-jy-JCx"/>
+        <segue reference="sTN-P5-M3T"/>
         <segue reference="yxt-gF-4az"/>
     </inferredMetricsTieBreakers>
 </document>
