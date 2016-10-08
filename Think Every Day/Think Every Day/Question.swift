@@ -26,21 +26,20 @@ struct Question {
     var ref: FIRDatabaseReference?
     var isLibrary: Bool!
     var alreadyPosted: Bool!
-    var goIntoLibrary: Bool!
     
 
-    init(content: String!, inspiration: String!, userID: String!, goIntoLibrary: Bool!) {
+    init(content: String!, inspiration: String!, userID: String!, isLibrary: Bool!, upVote: Int!, downVote: Int!, alreadyPosted: Bool!) {
        
         self.content = content
         self.inspiration = inspiration
         // self.fields = fields
         self.userID = userID
-        if (userID == "developer" || goIntoLibrary) {self.isLibrary = true} else {self.isLibrary = false}
+        self.isLibrary = isLibrary
         // self.tags = tags
+        // self.answers = answers
         self.upVote = 0
         self.downVote = 0
         self.alreadyPosted = false
-        self.goIntoLibrary = goIntoLibrary
         self.ref = FIRDatabase.database().reference()
         
     }
@@ -59,15 +58,13 @@ struct Question {
         self.upVote = snapshotValue["upVote"] as! Int
         self.downVote = snapshotValue["downVote"] as! Int
         self.alreadyPosted = snapshotValue["alreadyPosted"] as! Bool!
-        self.goIntoLibrary = snapshotValue["goIntoLibrary"] as! Bool!
         self.key = snapshot.key
         self.ref = snapshot.ref
         
     }
     
     func toAnyObject() -> [String: AnyObject] {
-        return ["content": content as AnyObject, "inspiration": inspiration as AnyObject, "userID" : userID as AnyObject, "goIntoLibrary": goIntoLibrary as AnyObject, ]
+        return ["content": content as AnyObject, "inspiration": inspiration as AnyObject, "userID" : userID as AnyObject, "islibrary": isLibrary as AnyObject, "upVote": 0 as AnyObject, "downVote": 0 as AnyObject, "alreadyPosted": false as AnyObject]
     }
-    
     
 }

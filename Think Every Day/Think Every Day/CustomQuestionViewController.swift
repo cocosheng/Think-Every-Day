@@ -24,7 +24,7 @@ class CustomQuestionViewController: UIViewController {
     
     
     let user = FIRAuth.auth()?.currentUser!
-    var goIntoLibrary: Bool!
+    var isLibrary: Bool!
     
     var databaseRef: FIRDatabaseReference! {
         return FIRDatabase.database().reference()
@@ -47,14 +47,15 @@ class CustomQuestionViewController: UIViewController {
         let content = ContentTextField.text
         let inspiration = InspirationTextField.text
         
-        goIntoLibrary = false
+        isLibrary = false
+        
+        // isLibrary is true if current user is developer, else set by user
         
         if (content != "" && inspiration != "") {
 
-            let newQuestion =  Question(content: content, inspiration: inspiration, userID: user!.uid, goIntoLibrary: goIntoLibrary)
+            let newQuestion = Question(content: content, inspiration: inspiration, userID: user!.uid, isLibrary: isLibrary, upVote: 0, downVote: 0, alreadyPosted: false)
         
             newQuestionRef.setValue(newQuestion.toAnyObject())
-            
             self.performSegue(withIdentifier: "didCreateCustomQuestion",sender: self)
         }
     }
