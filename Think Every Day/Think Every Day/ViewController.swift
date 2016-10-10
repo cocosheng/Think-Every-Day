@@ -8,6 +8,8 @@
 
 import UIKit
 
+import Firebase
+
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -22,12 +24,11 @@ class ViewController: UIViewController {
 
     // Go to signIn page when user not signed in.
     override func viewDidAppear(_ animated: Bool) {
-        // TODO: Check user signed in boolean.
-        if (true) {
-            self.performSegue(withIdentifier: "signIn", sender:self);
+        if let user = FIRAuth.auth()?.currentUser {
+            self.performSegue(withIdentifier: "mainMenu", sender: self);
             return
         }
-        self.performSegue(withIdentifier: "mainMenu", sender: self);
+        self.performSegue(withIdentifier: "signIn", sender:self);
     }
 
 }
