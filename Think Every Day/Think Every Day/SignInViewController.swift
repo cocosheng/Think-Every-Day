@@ -130,6 +130,8 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
                     NSLog(error.localizedDescription)
                     return
                 }
+                NetworkingService().saveUserInfo(user: FIRAuth.auth()!.currentUser!, email: (user?.email)!)
+
                 self.performSegue(withIdentifier: "SignedUpToMainMenu", sender: self)
             }
         }
