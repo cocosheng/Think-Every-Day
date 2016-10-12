@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="L6I-Nb-Fs8">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="L6I-Nb-Fs8">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -508,7 +508,7 @@
                         <outlet property="PasswordTextField" destination="XpT-9a-bRh" id="uC7-Yo-sfc"/>
                         <outlet property="UsernameTextField" destination="dV6-bN-kK5" id="0V1-VG-gfC"/>
                         <outlet property="appIconMainMenu" destination="fFn-Pm-ejG" id="uLH-8F-Ecf"/>
-                        <outlet property="facebookSignInButton" destination="HK1-sH-3ZX" id="vFe-fF-92R"/>
+                        <outlet property="facebookSignInButton" destination="HK1-sH-3ZX" id="X8q-jP-ffH"/>
                         <outlet property="googleSignInButton" destination="ls1-MZ-v9y" id="IoM-2m-bmu"/>
                         <segue destination="zRO-aJ-HAm" kind="presentation" identifier="SignInToForgotPassword" id="u1C-Ju-KVE"/>
                         <segue destination="bt7-v7-L3W" kind="presentation" identifier="SignInToSignUp" id="qz3-lX-ZQK"/>
@@ -876,12 +876,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDW-4p-9T9">
+                                <frame key="frameInset" minX="161" minY="545" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log out"/>
+                                <connections>
+                                    <action selector="logOutButtonTapped:" destination="H0q-OJ-10r" eventType="touchDown" id="Ou8-Ey-pra"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="DXu-7A-3Yx"/>
                     <connections>
+                        <outlet property="logOutButton" destination="hDW-4p-9T9" id="YUB-R8-nsa"/>
                         <outlet property="usernameLabel" destination="XUf-oo-lJU" id="oWw-RI-dVU"/>
+                        <segue destination="KRh-Oy-coG" kind="presentation" identifier="logOutToSignIn" id="f4Z-n3-PUB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awt-DV-z3k" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -914,8 +924,8 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZeS-jX-OEP"/>
         <segue reference="CBi-7S-XpU"/>
+        <segue reference="f4Z-n3-PUB"/>
         <segue reference="sTN-P5-M3T"/>
         <segue reference="yxt-gF-4az"/>
     </inferredMetricsTieBreakers>

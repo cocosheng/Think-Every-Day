@@ -13,8 +13,11 @@ import FirebaseDatabase
 import FirebaseStorage
 
 class AccountViewController: UIViewController {
+    // Currently do not support user email change.
     
     @IBOutlet weak var usernameLabel: UILabel!
+    
+    @IBOutlet weak var logOutButton: UIButton!
     
     var databaseRef: FIRDatabaseReference! {
         return FIRDatabase.database().reference()
@@ -24,11 +27,10 @@ class AccountViewController: UIViewController {
         return FIRStorage.storage().reference()
     }
 
+    // user info example: https://firebase.google.com/docs/auth/ios/manage-users
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-        
+
         let user = FIRAuth.auth()?.currentUser!
         self.usernameLabel.text = user?.email!
         
@@ -39,29 +41,16 @@ class AccountViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    // user info example: https://firebase.google.com/docs/auth/ios/manage-users
-//    if let user = FIRAuth.auth()?.currentUser {
-//        let name = user.displayName
-//        let email = user.email
-//        let photoUrl = user.photoURL
-//        let uid = user.uid;  // The user's ID, unique to the Firebase project.
-//        // Do NOT use this value to authenticate with
-//        // your backend server, if you have one. Use
-//        // getTokenWithCompletion:completion: instead.
-//        // return
-//    }
-//    // No user is signed in.
-
-    
+    @IBAction func logOutButtonTapped(_ sender: UIButton) {
+        try! FIRAuth.auth()!.signOut()
+        GIDSignIn.sharedInstance().signOut()
+        self.performSegue(withIdentifier: "logOutToSignIn", sender: self)
+    }
     
     // TODO: Reset user password.
     
     // TODO: Reset user name.
     
-    // TODO: Sign out when tap sign out..
-    // try! FIRAuth.auth()!.signOut()
-    
-    // Currently do not support user email change.
     
     
 }

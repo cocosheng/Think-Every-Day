@@ -16,8 +16,8 @@ import FBSDKLoginKit
 
 @objc(SignInViewController)
 
-class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
-
+class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate, FBSDKLoginButtonDelegate {
+    
     @IBOutlet weak var UsernameTextField: UITextField!
     
     @IBOutlet weak var PasswordTextField: UITextField!
@@ -25,23 +25,30 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
     @IBOutlet weak var appIconMainMenu: UIImageView!
     
     @IBOutlet weak var facebookSignInButton: FBSDKLoginButton!
-
+    
     @IBOutlet weak var googleSignInButton: GIDSignInButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.appIconMainMenu.image = #imageLiteral(resourceName: "AppIconMainMenu")
+        
+        if let user = FIRAuth.auth()?.currentUser{
+            NSLog("debug user is logged in")
+        } else {
+            NSLog("debug user is logged out")
+        }
+//        facebookSignInButton.delegate = self
         // TODO: customize Google sign-in button.
         
         // TODO: customize FB sign-in button.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func SignInButtonTapped(_ sender: UIButton) {
         NSLog("debug sign in tapped")
         if UsernameTextField.text == "" {
@@ -66,7 +73,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
             self.performSegue(withIdentifier: "SignedUpToMainMenu",sender: self)
             NSLog("debug Successful signed in.")
         })
-    
+        
     }
     
     @IBAction func RegisterButtonTapped(_ sender: UIButton) {
@@ -97,7 +104,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
         loginManager.logIn(withReadPermissions: ["email"], from: self, handler: { (result, error) in
             if let error = error {
                 // TODO: alert.
-                NSLog(error.localizedDescription)
+                NSLog("debug "+error.localizedDescription)
             } else if result!.isCancelled {
                 // TODO: alert.
                 NSLog("debug FBLogin cancelled")
@@ -108,17 +115,21 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
             // Already signed in.
             if let user = FIRAuth.auth()?.currentUser {
                 self.performSegue(withIdentifier: "SignedUpToMainMenu", sender: self)
+                return
             }
+            // TODO: alert.
+            NSLog("debug Facebook Sign In cannot be completed.")
         })
     }
     
     // Firebase login for Google and FB login.
     func firebaseLogin(_ credential: FIRAuthCredential) {
+        // Already signed in.
         if let user = FIRAuth.auth()?.currentUser {
             user.link(with: credential) { (user, error) in
                 if let error = error {
                     // TODO: alert.
-                    NSLog(error.localizedDescription)
+                    NSLog("debug "+error.localizedDescription)
                     return
                 }
                 self.performSegue(withIdentifier: "SignedUpToMainMenu", sender: self)
@@ -127,21 +138,35 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
             FIRAuth.auth()?.signIn(with: credential) { (user, error) in
                 if let error = error {
                     // TODO: alert.
-                    NSLog(error.localizedDescription)
+                    NSLog("debug "+error.localizedDescription)
                     return
                 }
                 NetworkingService().saveUserInfo(user: FIRAuth.auth()!.currentUser!, email: (user?.email)!)
-
+                
                 self.performSegue(withIdentifier: "SignedUpToMainMenu", sender: self)
             }
         }
     }
+    
+    // Facebook sign in Delegate function.
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error?) {
+        if let error = error {
+            print("debug facebook" + error.localizedDescription)
+            return
+        }
+        print("debug facebook loginButton function called")
+    }
+    
+    public func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        
+    }
 
+    
     // GIDSignInDelegate function. For Google Signin.
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
         if let error = error {
             // TODO: alert.
-            NSLog(error.localizedDescription)
+            NSLog("debug "+error.localizedDescription)
             return
         }
         
@@ -150,5 +175,5 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
                                                           accessToken: (authentication?.accessToken)!)
         firebaseLogin(credential)
     }
-
+    
 }
