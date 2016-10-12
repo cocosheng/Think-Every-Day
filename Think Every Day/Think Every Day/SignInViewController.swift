@@ -16,8 +16,9 @@ import FBSDKLoginKit
 
 @objc(SignInViewController)
 
-class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate, FBSDKLoginButtonDelegate {
-    
+class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate{
+//,FBSDKLoginButtonDelegate {
+
     @IBOutlet weak var UsernameTextField: UITextField!
     
     @IBOutlet weak var PasswordTextField: UITextField!
@@ -38,6 +39,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
         } else {
             NSLog("debug user is logged out")
         }
+//        let facebookSignInButton = FBSDKLoginButton()
 //        facebookSignInButton.delegate = self
         // TODO: customize Google sign-in button.
         
@@ -148,18 +150,18 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
         }
     }
     
-    // Facebook sign in Delegate function.
-    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error?) {
-        if let error = error {
-            print("debug facebook" + error.localizedDescription)
-            return
-        }
-        print("debug facebook loginButton function called")
-    }
-    
-    public func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
-        
-    }
+//    //Facebook sign in Delegate function.
+//    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error?) {
+//        NSLog("debug facebook loginButton called")
+//        if let error = error {
+//            NSLog("debug facebook" + error.localizedDescription)
+//            return
+//        }
+//        NSLog("debug facebook loginButton function called")
+//    }
+//    
+//    public func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+//    }
 
     
     // GIDSignInDelegate function. For Google Signin.

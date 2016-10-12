@@ -32,7 +32,7 @@ class AccountViewController: UIViewController {
         super.viewDidLoad()
 
         let user = FIRAuth.auth()?.currentUser!
-        self.usernameLabel.text = user?.email!
+//        self.usernameLabel.text = user?.email!
         
     }
 
