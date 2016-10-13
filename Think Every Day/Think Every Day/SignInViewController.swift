@@ -143,7 +143,11 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
                     NSLog("debug "+error.localizedDescription)
                     return
                 }
-                NetworkingService().saveUserInfo(user: FIRAuth.auth()!.currentUser!, email: (user?.email)!)
+                
+                // TODO: for fb sign in saveUserInfo.
+                if (user?.email!) != nil {
+                    NetworkingService().saveUserInfo(user: FIRAuth.auth()!.currentUser!, email: (user?.email)!)
+                }
                 
                 self.performSegue(withIdentifier: "SignedUpToMainMenu", sender: self)
             }

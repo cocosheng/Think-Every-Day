@@ -32,7 +32,11 @@ class AccountViewController: UIViewController {
         super.viewDidLoad()
 
         let user = FIRAuth.auth()?.currentUser!
-//        self.usernameLabel.text = user?.email!
+        if user?.email == nil {
+            self.usernameLabel.text = "fbLoginUsername"
+            return
+        }
+        self.usernameLabel.text = user?.email!
         
     }
 
@@ -51,6 +55,9 @@ class AccountViewController: UIViewController {
     
     // TODO: Reset user name.
     
+    @IBAction func answerHistoryButtonTapped(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "accountAnswerHistory", sender: self)
+    }
     
     
 }
