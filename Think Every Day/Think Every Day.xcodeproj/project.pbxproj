@@ -24,7 +24,6 @@
 		8A7878B01D94752F0062EF79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7878AE1D94752F0062EF79 /* LaunchScreen.storyboard */; };
 		8A7878BB1D94752F0062EF79 /* Think_Every_DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878BA1D94752F0062EF79 /* Think_Every_DayTests.swift */; };
 		8A7878C61D94752F0062EF79 /* Think_Every_DayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878C51D94752F0062EF79 /* Think_Every_DayUITests.swift */; };
-		CE1C01101DAED7FA001D55BA /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C010F1DAED7FA001D55BA /* FBSDKLoginKit.framework */; };
 		CE1C01121DAED860001D55BA /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C01111DAED860001D55BA /* FBSDKCoreKit.framework */; };
 		CE1C01151DAED876001D55BA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C01131DAED876001D55BA /* Bolts.framework */; };
 		CE1C01161DAED876001D55BA /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C01141DAED876001D55BA /* FBSDKShareKit.framework */; };
@@ -35,6 +34,7 @@
 		CE64695C1DA2E7B200D03D26 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64695B1DA2E7B200D03D26 /* NotificationViewController.swift */; };
 		CE64695E1DA2E7D900D03D26 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64695D1DA2E7D900D03D26 /* AccountViewController.swift */; };
 		CE92E8531DA1895D00ED3EAE /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92E8521DA1895D00ED3EAE /* Utilities.swift */; };
+		CEEE62521DB55B2300EA8DC2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEE62501DB55A4E00EA8DC2 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +77,6 @@
 		8A7878C11D94752F0062EF79 /* Think Every DayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Think Every DayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7878C51D94752F0062EF79 /* Think_Every_DayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Think_Every_DayUITests.swift; sourceTree = "<group>"; };
 		8A7878C71D94752F0062EF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE1C010F1DAED7FA001D55BA /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		CE1C01111DAED860001D55BA /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		CE1C01131DAED876001D55BA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../../../Documents/FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
 		CE1C01141DAED876001D55BA /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -90,6 +89,7 @@
 		CE64695D1DA2E7D900D03D26 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		CE7F0F3D1DA5140700ED3799 /* Think Every Day-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Think Every Day-Bridging-Header.h"; sourceTree = "<group>"; };
 		CE92E8521DA1895D00ED3EAE /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "Think Every Day/Utilities.swift"; sourceTree = SOURCE_ROOT; };
+		CEEE62501DB55A4E00EA8DC2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		E8543714E5148043F862FE43 /* Pods-Think Every Day.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Think Every Day.release.xcconfig"; path = "Pods/Target Support Files/Pods-Think Every Day/Pods-Think Every Day.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,7 +100,7 @@
 			files = (
 				4C0C1357A26AC321C2A6F2D0 /* Pods_Think_Every_Day.framework in Frameworks */,
 				CE1C01161DAED876001D55BA /* FBSDKShareKit.framework in Frameworks */,
-				CE1C01101DAED7FA001D55BA /* FBSDKLoginKit.framework in Frameworks */,
+				CEEE62521DB55B2300EA8DC2 /* FBSDKLoginKit.framework in Frameworks */,
 				CE1C01121DAED860001D55BA /* FBSDKCoreKit.framework in Frameworks */,
 				CE1C01151DAED876001D55BA /* Bolts.framework in Frameworks */,
 			);
@@ -135,10 +135,10 @@
 		885B76B3AF44D4F4FD1BC300 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEEE62501DB55A4E00EA8DC2 /* FBSDKLoginKit.framework */,
 				CE1C01131DAED876001D55BA /* Bolts.framework */,
 				CE1C01141DAED876001D55BA /* FBSDKShareKit.framework */,
 				CE1C01111DAED860001D55BA /* FBSDKCoreKit.framework */,
-				CE1C010F1DAED7FA001D55BA /* FBSDKLoginKit.framework */,
 				2C2D27B0746DC62297516473 /* Pods_Think_Every_Day.framework */,
 			);
 			name = Frameworks;
