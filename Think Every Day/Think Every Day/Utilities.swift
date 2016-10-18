@@ -9,14 +9,15 @@
 //  This class provides new UIViewController functions that might be used throughout the app.
 import UIKit
 
-//extension UIViewController {
-class Utilities: UIViewController {
+extension UIViewController {
     // Hide keyboard if user finishes typing and tap the screen.
-    class func hideKeyboardWhenTappedAround() {
-//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
-//        view.addGestureRecognizer(tap)
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
+    
     func dismissKeyboard() {
         view.endEditing(true)
     }
+    
 }

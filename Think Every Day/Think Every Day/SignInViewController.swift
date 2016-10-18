@@ -30,8 +30,10 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
     @IBOutlet weak var googleSignInButton: GIDSignInButton!
     
     override func viewDidLoad() {
+
         super.viewDidLoad()
-        Utilities.hideKeyboardWhenTappedAround()
+        self.hideKeyboardWhenTappedAround()
+
         self.appIconMainMenu.image = #imageLiteral(resourceName: "AppIconMainMenu")
         
         if let user = FIRAuth.auth()?.currentUser{
@@ -145,7 +147,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
                 }
                 
                 // TODO: for fb sign in saveUserInfo.
-                if (user?.email!) != nil {
+                if user?.email != nil {
                     NetworkingService().saveUserInfo(user: FIRAuth.auth()!.currentUser!, email: (user?.email)!)
                 }
                 
