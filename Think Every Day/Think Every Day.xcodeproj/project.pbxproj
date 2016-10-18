@@ -24,6 +24,10 @@
 		8A7878B01D94752F0062EF79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7878AE1D94752F0062EF79 /* LaunchScreen.storyboard */; };
 		8A7878BB1D94752F0062EF79 /* Think_Every_DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878BA1D94752F0062EF79 /* Think_Every_DayTests.swift */; };
 		8A7878C61D94752F0062EF79 /* Think_Every_DayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7878C51D94752F0062EF79 /* Think_Every_DayUITests.swift */; };
+		CE12228A1DB66DE2009B65A7 /* AnswerHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1222891DB66DE2009B65A7 /* AnswerHistoryTableViewController.swift */; };
+		CE12228C1DB67120009B65A7 /* InfoEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12228B1DB6711F009B65A7 /* InfoEditViewController.swift */; };
+		CE12228E1DB67464009B65A7 /* AchievementTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12228D1DB67464009B65A7 /* AchievementTableViewController.swift */; };
+		CE1222901DB674F8009B65A7 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12228F1DB674F8009B65A7 /* SettingsTableViewController.swift */; };
 		CE1C01121DAED860001D55BA /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C01111DAED860001D55BA /* FBSDKCoreKit.framework */; };
 		CE1C01151DAED876001D55BA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C01131DAED876001D55BA /* Bolts.framework */; };
 		CE1C01161DAED876001D55BA /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C01141DAED876001D55BA /* FBSDKShareKit.framework */; };
@@ -77,6 +81,10 @@
 		8A7878C11D94752F0062EF79 /* Think Every DayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Think Every DayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7878C51D94752F0062EF79 /* Think_Every_DayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Think_Every_DayUITests.swift; sourceTree = "<group>"; };
 		8A7878C71D94752F0062EF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE1222891DB66DE2009B65A7 /* AnswerHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerHistoryTableViewController.swift; sourceTree = "<group>"; };
+		CE12228B1DB6711F009B65A7 /* InfoEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoEditViewController.swift; sourceTree = "<group>"; };
+		CE12228D1DB67464009B65A7 /* AchievementTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementTableViewController.swift; sourceTree = "<group>"; };
+		CE12228F1DB674F8009B65A7 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		CE1C01111DAED860001D55BA /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		CE1C01131DAED876001D55BA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../../../Documents/FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
 		CE1C01141DAED876001D55BA /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -184,6 +192,10 @@
 			isa = PBXGroup;
 			children = (
 				CE64695D1DA2E7D900D03D26 /* AccountViewController.swift */,
+				CE1222891DB66DE2009B65A7 /* AnswerHistoryTableViewController.swift */,
+				CE12228B1DB6711F009B65A7 /* InfoEditViewController.swift */,
+				CE12228D1DB67464009B65A7 /* AchievementTableViewController.swift */,
+				CE12228F1DB674F8009B65A7 /* SettingsTableViewController.swift */,
 			);
 			name = Account;
 			sourceTree = "<group>";
@@ -463,13 +475,17 @@
 				CE6469581DA2DF6300D03D26 /* SignUpViewController.swift in Sources */,
 				8A7878A81D94752F0062EF79 /* DiscoveryViewController.swift in Sources */,
 				CE6469561DA2DF3D00D03D26 /* SignInViewController.swift in Sources */,
+				CE12228C1DB67120009B65A7 /* InfoEditViewController.swift in Sources */,
 				CE64695C1DA2E7B200D03D26 /* NotificationViewController.swift in Sources */,
 				8A1D26DE1DA852F000D4C08C /* User.swift in Sources */,
 				CE64695E1DA2E7D900D03D26 /* AccountViewController.swift in Sources */,
 				8A7878A41D94752F0062EF79 /* AppDelegate.swift in Sources */,
+				CE12228A1DB66DE2009B65A7 /* AnswerHistoryTableViewController.swift in Sources */,
 				CE92E8531DA1895D00ED3EAE /* Utilities.swift in Sources */,
 				8A252E651DA84897000F0FF6 /* NetworkingService.swift in Sources */,
 				8A252E611DA83191000F0FF6 /* CustomQuestionViewController.swift in Sources */,
+				CE12228E1DB67464009B65A7 /* AchievementTableViewController.swift in Sources */,
+				CE1222901DB674F8009B65A7 /* SettingsTableViewController.swift in Sources */,
 				8A252E631DA83283000F0FF6 /* EditAnswerViewController.swift in Sources */,
 				8A7878A61D94752F0062EF79 /* TodayQuestionViewController.swift in Sources */,
 			);

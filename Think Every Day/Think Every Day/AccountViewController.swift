@@ -30,8 +30,10 @@ class AccountViewController: UIViewController {
     // user info example: https://firebase.google.com/docs/auth/ios/manage-users
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Account"
 
         let user = FIRAuth.auth()?.currentUser!
+        // Placeholder for fb login.
         if user?.email == nil {
             self.usernameLabel.text = "fbLoginUsername"
             return
@@ -55,9 +57,6 @@ class AccountViewController: UIViewController {
     
     // TODO: Reset user name.
     
-    @IBAction func answerHistoryButtonTapped(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "accountAnswerHistory", sender: self)
-    }
     
     
 }
