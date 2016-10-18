@@ -12,13 +12,7 @@ class EditAnswerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-<<<<<<< Updated upstream
         self.hideKeyboardWhenTappedAround()
-
-=======
-        // Do any additional setup after loading the view.
-        self.hideKeyboardWhenTappedAround()
->>>>>>> Stashed changes
     }
 
     override func didReceiveMemoryWarning() {
