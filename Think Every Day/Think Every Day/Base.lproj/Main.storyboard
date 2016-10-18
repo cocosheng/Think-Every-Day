@@ -961,7 +961,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G1F-OM-63S" id="f3l-3z-0QC">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -989,7 +989,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LDz-Nx-175" id="3Wa-Xo-BCL">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1017,11 +1017,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MNv-fQ-9gB" id="oaf-kW-HLc">
-<<<<<<< Updated upstream
-                                    <frame key="frameInset" width="375" height="59"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-=======
-                                    <frame key="frameInset" width="375" height="78.5"/>
+                                    <frame key="frameInset" width="375" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BPy-m9-CwM">
@@ -1034,7 +1030,6 @@
                                             </items>
                                         </navigationBar>
                                     </subviews>
->>>>>>> Stashed changes
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -1056,7 +1051,7 @@
                     <tabBarItem key="tabBarItem" title="Account" image="second" id="ao0-FC-Fz1"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qlF-74-yOR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qlF-74-yOR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
