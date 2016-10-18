@@ -203,6 +203,7 @@
 		8A4C45CE1DA4585E00F5A926 /* AppWide */ = {
 			isa = PBXGroup;
 			children = (
+				CE92E8521DA1895D00ED3EAE /* Utilities.swift */,
 				8A252E641DA84897000F0FF6 /* NetworkingService.swift */,
 				8A1D26DD1DA852F000D4C08C /* User.swift */,
 				8A1D26DF1DA8595E00D4C08C /* Question.swift */,
@@ -238,7 +239,6 @@
 				CE1C01171DAED9AB001D55BA /* Think Every Day.entitlements */,
 				8A7878A31D94752F0062EF79 /* AppDelegate.swift */,
 				CE6469511DA193EC00D03D26 /* ViewController.swift */,
-				CE92E8521DA1895D00ED3EAE /* Utilities.swift */,
 				8A7878A91D94752F0062EF79 /* Main.storyboard */,
 				8A7878AC1D94752F0062EF79 /* Assets.xcassets */,
 				8A7878AE1D94752F0062EF79 /* LaunchScreen.storyboard */,

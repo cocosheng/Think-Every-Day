@@ -31,7 +31,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        Utilities.hideKeyboardWhenTappedAround()
         self.appIconMainMenu.image = #imageLiteral(resourceName: "AppIconMainMenu")
         
         if let user = FIRAuth.auth()?.currentUser{
