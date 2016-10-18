@@ -42,7 +42,7 @@ class CustomQuestionViewController: UIViewController {
     }
     
     @IBAction func saveAndAnwer(_ sender: UIButton) {
-        let newQuestionRef = databaseRef.child("questions").childByAutoId()
+        // let newQuestionRef = databaseRef.child("questions").childByAutoId()
         
         let content = ContentTextField.text
         let inspiration = InspirationTextField.text
@@ -53,10 +53,10 @@ class CustomQuestionViewController: UIViewController {
         
         if (content != "" && inspiration != "") {
 
-            let newQuestion = Question(content: content, inspiration: inspiration, userID: user!.uid, isLibrary: isLibrary, upVote: 0, downVote: 0, alreadyPosted: false)
+            // let newQuestion = Question(content: content, inspiration: inspiration, userID: user!.uid, isLibrary: isLibrary, upVote: 0, downVote: 0, alreadyPosted: false)
         
-            newQuestionRef.setValue(newQuestion.toAnyObject())
-            self.performSegue(withIdentifier: "didCreateCustomQuestion",sender: self)
+            // newQuestionRef.setValue(newQuestion.toAnyObject())
+            // self.performSegue(withIdentifier: "didCreateCustomQuestion",sender: self)
         }
     }
 

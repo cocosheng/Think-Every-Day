@@ -23,4 +23,5 @@ struct NetworkingService {
         databaseRef.child("users").child(user.uid).setValue(["email": email])
         
     }
+    
 }
