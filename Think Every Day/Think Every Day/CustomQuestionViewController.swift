@@ -18,11 +18,6 @@ class CustomQuestionViewController: UIViewController {
     @IBOutlet weak var InspirationTextField: UITextView!
     
     
-    
-    // TODO: update after implementing Field, Answer, Tag class
-    // TODO: implement go into library choice
-    
-    
     let user = FIRAuth.auth()?.currentUser!
     var isLibrary: Bool!
     
@@ -42,7 +37,6 @@ class CustomQuestionViewController: UIViewController {
     }
     
     @IBAction func saveAndAnwer(_ sender: UIButton) {
-        // let newQuestionRef = databaseRef.child("questions").childByAutoId()
         
         let content = ContentTextField.text
         let inspiration = InspirationTextField.text
@@ -52,11 +46,8 @@ class CustomQuestionViewController: UIViewController {
         // isLibrary is true if current user is developer, else set by user
         
         if (content != "" && inspiration != "") {
-
-            // let newQuestion = Question(content: content, inspiration: inspiration, userID: user!.uid, isLibrary: isLibrary, upVote: 0, downVote: 0, alreadyPosted: false)
-        
-            // newQuestionRef.setValue(newQuestion.toAnyObject())
-            // self.performSegue(withIdentifier: "didCreateCustomQuestion",sender: self)
+            NetworkingService().saveQuestion(content: content, inspiration: inspiration, userID: FIRAuth.auth()!.currentUser!.uid, enterLibrary: true)
+            self.performSegue(withIdentifier: "didCreateCustomQuestion", sender: self)
         }
     }
 
