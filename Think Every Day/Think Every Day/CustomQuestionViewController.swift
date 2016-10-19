@@ -18,11 +18,6 @@ class CustomQuestionViewController: UIViewController {
     @IBOutlet weak var InspirationTextField: UITextView!
     
     
-    
-    // TODO: update after implementing Field, Answer, Tag class
-    // TODO: implement go into library choice
-    
-    
     let user = FIRAuth.auth()?.currentUser!
     var isLibrary: Bool!
     
@@ -42,7 +37,9 @@ class CustomQuestionViewController: UIViewController {
     }
     
     @IBAction func saveAndAnwer(_ sender: UIButton) {
-        let newQuestionRef = databaseRef.child("questions").childByAutoId()
+        
+        // todo: implement islibrary or not
+        // todo: debug the double segue problem
         
         let content = ContentTextField.text
         let inspiration = InspirationTextField.text
@@ -52,12 +49,41 @@ class CustomQuestionViewController: UIViewController {
         // isLibrary is true if current user is developer, else set by user
         
         if (content != "" && inspiration != "") {
-
-            let newQuestion = Question(content: content, inspiration: inspiration, userID: user!.uid, isLibrary: isLibrary, upVote: 0, downVote: 0, alreadyPosted: false)
-        
-            newQuestionRef.setValue(newQuestion.toAnyObject())
-            self.performSegue(withIdentifier: "didCreateCustomQuestion",sender: self)
+            saveQuestion(content: content, inspiration: inspiration, userID: FIRAuth.auth()!.currentUser!.uid, enterLibrary: true)
+            self.performSegue(withIdentifier: "didCreateCustomQuestion", sender: self)
         }
+    }
+    
+    func saveQuestion(content: String!, inspiration: String!, userID: String!, enterLibrary: Bool!) {
+        
+        // initialize all variables
+        // update user side (question/answer/contributedQ)
+        
+        let key = databaseRef.child("questions").childByAutoId().key
+        let question = ["content": content,
+                        "inspiration": inspiration,
+                        "createdByUser": userID,
+                        "isLibrary": enterLibrary,
+                        "upVote": 0,
+                        "downVote": 0,
+                        "alreadyPosted": false] as [String : Any]
+        let childUpdates = ["/questions/\(key)": question]
+        databaseRef.updateChildValues(childUpdates)
+        databaseRef.child("questions").child(key).child("answers").setValue(["totalNumber": 0])
+        databaseRef.child("questions").child(key).child("tags").setValue(["totalNumber": 0])
+        // todo: update tags/fields adding
+        databaseRef.child("questions").child(key).child("fields").setValue(["totalNumber": 0])
+        
+        // update user side, need to debug
+        //        databaseRef.child("users").child(userID).child("contributedQuestions").observeSingleEvent(of: .value, with: { (snapshot) in
+        //            // Get user value
+        //            let value = snapshot.value as? NSDictionary
+        //            let currentNumContributedQ = value?["totalNumber"] as! Int
+        //            snapshot.setValue(currentNumContributedQ + 1, forKey: "totalNumber")
+        //            snapshot.setValue(key, forKey: "\(currentNumContributedQ + 1)")
+        //        }) { (error) in
+        //            print(error.localizedDescription)
+        //        }
     }
 
     /*
