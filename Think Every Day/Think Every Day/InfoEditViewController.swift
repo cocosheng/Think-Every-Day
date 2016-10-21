@@ -20,5 +20,12 @@ class InfoEditViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    // TODO: Reset user password.
+    
+    // TODO: Reset user name.
+    
+
 
 }

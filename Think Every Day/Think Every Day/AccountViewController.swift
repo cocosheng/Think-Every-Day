@@ -53,10 +53,5 @@ class AccountViewController: UIViewController {
         self.performSegue(withIdentifier: "logOutToSignIn", sender: self)
     }
     
-    // TODO: Reset user password.
-    
-    // TODO: Reset user name.
-    
-    
     
 }
