@@ -27,5 +27,4 @@ class InfoEditViewController: UIViewController {
     // TODO: Reset user name.
     
 
-
 }
