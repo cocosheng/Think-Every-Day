@@ -56,9 +56,11 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
     @IBAction func SignInButtonTapped(_ sender: UIButton) {
         NSLog("debug sign in tapped")
         if UsernameTextField.text == "" {
+            self.showErrorAlert(errorTitle: "Sign in unsuccessful", errorMessage: "Email address cannot be empty.")
             NSLog("debug Email address cannot be empty")
             return
         } else if PasswordTextField.text == "" {
+            self.showErrorAlert(errorTitle: "Sign in unsuccessful", errorMessage: "Password cannot be empty.")
             NSLog("debug Password cannot be empty.")
             return
         }
@@ -66,9 +68,8 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
         FIRAuth.auth()?.signIn(withEmail: UsernameTextField.text!, password: PasswordTextField.text!, completion: {
             user, error in
             if error != nil {
-                // TODO: Show alert incorrect password.
-                
-                // Password or email address not recognized?
+                // Password or email address not recognized.
+                self.showErrorAlert(errorTitle: "Sign in unsuccessful", errorMessage: error as! String!)
                 NSLog("debug Your password is incorrect.")
                 return
             }
@@ -107,10 +108,10 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
         let loginManager = FBSDKLoginManager()
         loginManager.logIn(withReadPermissions: ["email"], from: self, handler: { (result, error) in
             if let error = error {
-                // TODO: alert.
+                self.showErrorAlert(errorTitle: "Facebook sign in unsuccessful", errorMessage: error.localizedDescription as! String!)
                 NSLog("debug "+error.localizedDescription)
             } else if result!.isCancelled {
-                // TODO: alert.
+                self.showErrorAlert(errorTitle: "Facebook sign in unsuccessful", errorMessage: "Facebook sign in is cancelled.")
                 NSLog("debug FBLogin cancelled")
             } else {
                 let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
@@ -121,7 +122,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
                 self.performSegue(withIdentifier: "SignedUpToMainMenu", sender: self)
                 return
             }
-            // TODO: alert.
+            self.showErrorAlert(errorTitle: "Facebook sign in unsuccessful", errorMessage: "Facebook sign in cannot be completed.")
             NSLog("debug Facebook Sign In cannot be completed.")
         })
     }
@@ -132,7 +133,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
         if let user = FIRAuth.auth()?.currentUser {
             user.link(with: credential) { (user, error) in
                 if let error = error {
-                    // TODO: alert.
+                    self.showErrorAlert(errorTitle: "Sign in unsuccessful", errorMessage: error.localizedDescription as! String!)
                     NSLog("debug "+error.localizedDescription)
                     return
                 }
@@ -141,7 +142,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
         } else {
             FIRAuth.auth()?.signIn(with: credential) { (user, error) in
                 if let error = error {
-                    // TODO: alert.
+                    self.showErrorAlert(errorTitle: "Sign in unsuccessful", errorMessage: error.localizedDescription as! String!)
                     NSLog("debug "+error.localizedDescription)
                     return
                 }
@@ -173,8 +174,8 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
     // GIDSignInDelegate function. For Google Signin.
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
         if let error = error {
-            // TODO: alert.
-            NSLog("debug "+error.localizedDescription)
+            self.showErrorAlert(errorTitle: "Google sign in unsuccessful", errorMessage: error.localizedDescription as! String!)
+            NSLog("debug " + error.localizedDescription)
             return
         }
         

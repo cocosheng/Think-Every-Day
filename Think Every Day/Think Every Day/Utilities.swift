@@ -20,4 +20,14 @@ extension UIViewController {
         view.endEditing(true)
     }
     
+    // Show error alert.
+    func showErrorAlert(errorTitle: String!, errorMessage: String!) {
+        let myAlert = UIAlertView(title: errorTitle, message: errorMessage, delegate: nil, cancelButtonTitle: "Try Again")
+        myAlert.show()
+    }
+    
+    func showAlert(alertTitle: String!, alertMessage: String!, cancelButtonTitle: String!) {
+        let myAlert = UIAlertView(title: alertTitle, message: alertMessage, delegate: nil, cancelButtonTitle: cancelButtonTitle)
+        myAlert.show()
+    }
 }

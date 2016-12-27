@@ -29,24 +29,25 @@ class SignUpViewController: UIViewController {
     
     @IBAction func SignUpButton(_ sender: UIButton) {
         if UsernameSignUp.text == "" {
+            self.showErrorAlert(errorTitle:"Sign up unsuccessful", errorMessage:"Username cannot be empty.")
             NSLog("debug Username cannot be empty")
             return
         } else if (PasswordSignUp.text?.characters.count)! < 6 {
             // Firebase requires password to be at least 6 char.
+            self.showErrorAlert(errorTitle:"Sign up unsuccessful", errorMessage:"Password must be at last 6 characters.")
             NSLog("debug Password must be at least 6 characters.")
             return
         }
         if PasswordSignUp.text != PasswordCheckSignUp.text {
-            // TODO: show alert for dismatched passwords.
-            
+            self.showErrorAlert(errorTitle:"Sign up unsuccessful", errorMessage:"Your passwords do not match.")
             NSLog("debug Your passwords do not match.")
             return
         }
         FIRAuth.auth()?.createUser(withEmail: UsernameSignUp.text!, password: PasswordSignUp.text!, completion: {
                 user, error in
             if error != nil {
-                NSLog(error as! String)
                 // Show alert user already exists.
+                self.showErrorAlert(errorTitle:"Sign up unsuccessful", errorMessage:"User email already registered.")
                 NSLog("debug User email already registered.")
                 return
             }
@@ -54,10 +55,12 @@ class SignUpViewController: UIViewController {
             user?.sendEmailVerification(completion: { error in
                 if let error = error {
                     // Show alert user email invalid.
+                    self.showErrorAlert(errorTitle:"Sign up unsuccessful", errorMessage:error)
                     NSLog("debug User email invalid.")
                     return
                 } else {
                     // Show alert email sent.
+                    self.showAlert(alertTitle: "Sign up successful", alertMessage: "Verification email sent.", cancelButtonTitle: "Got it!")
                     NSLog("debug Email sent")
                 }
             })
