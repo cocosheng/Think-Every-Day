@@ -55,7 +55,7 @@ class SignUpViewController: UIViewController {
             user?.sendEmailVerification(completion: { error in
                 if let error = error {
                     // Show alert user email invalid.
-                    self.showErrorAlert(errorTitle:"Sign up unsuccessful", errorMessage:error)
+                    self.showErrorAlert(errorTitle:"Sign up unsuccessful", errorMessage:error.localizedDescription)
                     NSLog("debug User email invalid.")
                     return
                 } else {

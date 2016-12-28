@@ -34,7 +34,7 @@ class ForgotPasswordViewController: UIViewController {
         FIRAuth.auth()?.sendPasswordReset(withEmail: email!, completion: {
             error in
             if let error = error {
-                self.showErrorAlert(errorTitle: "Reset password unsuccessful", errorMessage: error)
+                self.showErrorAlert(errorTitle: "Reset password unsuccessful", errorMessage: error.localizedDescription)
                 NSLog("debug Email address is incorrect.")
                 return
             }
