@@ -9,7 +9,6 @@
 import UIKit
 
 class AnswerHistoryTableViewController: UITableViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Answer History"

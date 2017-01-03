@@ -8,7 +8,20 @@
 
 import UIKit
 
+class AchievementTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var achievement: UILabel!
+    
+    @IBOutlet weak var detail: UILabel!
+
+}
+
+
 class AchievementTableViewController: UITableViewController {
+    // TODO: placeholder data.
+    var achievement = ["achievement 1", "achievement 2"]
+    var detail = ["detail 1", "detail 2"]
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,24 +41,25 @@ class AchievementTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return achievement.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AchievementCell", for: indexPath) as! AchievementTableViewCell
 
-        // Configure the cell...
-
+        let achievementName = achievement[indexPath.row]
+        let detailName = detail[indexPath.row]
+        cell.achievement?.text = achievementName
+        cell.detail?.text = detailName
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
