@@ -8,15 +8,21 @@
 
 import UIKit
 
+class QuestionsAnswerTableViewCell: UITableViewCell {
+
+    @IBOutlet weak var question: UILabel!
+    
+    @IBOutlet weak var answer: UILabel!
+}
+
 class AnswerHistoryTableViewController: UITableViewController {
+    // TODO: placeholder data.
+    var question = ["Q 1", "Q 2", "Q 3"]
+    var answer = ["A 1", "A 2", "A 3"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Answer History"
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,24 +33,21 @@ class AnswerHistoryTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return question.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "QuestionsAnswerCell", for: indexPath) as! QuestionsAnswerTableViewCell
+        let questionContent = question[indexPath.row]
+        let answerContent = answer[indexPath.row]
+        cell.question?.text = questionContent
+        cell.answer?.text = answerContent
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

@@ -1044,7 +1044,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuestionsAnswerTableViewCell" rowHeight="74" id="MNv-fQ-9gB" customClass="QuestionsAnswerTableViewCell" customModule="Think_Every_Day" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuestionsAnswerCell" rowHeight="74" id="MNv-fQ-9gB" customClass="QuestionsAnswerTableViewCell" customModule="Think_Every_Day" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="74"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MNv-fQ-9gB" id="oaf-kW-HLc">
@@ -1068,8 +1068,8 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="answer" destination="Lmo-ZV-uKM" id="LI7-z9-xbF"/>
-                                    <outlet property="question" destination="wDL-x7-9p2" id="GdE-BR-udw"/>
+                                    <outlet property="answer" destination="Lmo-ZV-uKM" id="ouM-Kg-xZc"/>
+                                    <outlet property="question" destination="wDL-x7-9p2" id="CQg-g1-udv"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
