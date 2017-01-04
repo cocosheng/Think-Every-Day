@@ -30,4 +30,27 @@ extension UIViewController {
         let myAlert = UIAlertView(title: alertTitle, message: alertMessage, delegate: nil, cancelButtonTitle: cancelButtonTitle)
         myAlert.show()
     }
+
+    // Show alert with a text field for input.
+    func showChangeContentAlert(alertTitle: String!, alertMessage: String!, textFieldPlaceholder: String!, errorMessage: String!) -> UIAlertController {
+        let alertController = UIAlertController(
+            title: alertTitle,
+            message: alertMessage,
+            preferredStyle: UIAlertControllerStyle.alert)
+        
+        // Check whether textField is empty. If empty, show alert to ask user input again.
+        let okAction = UIAlertAction(title: "OK", style:UIAlertActionStyle.default, handler: { (_) -> Void in
+            let textfield = alertController.textFields!.first!
+            if (textfield.text?.isEmpty)! {
+                self.showErrorAlert(errorTitle: "Reset unsuccessful", errorMessage: errorMessage)
+            }
+        })
+        
+        alertController.addTextField {(txtPassword) -> Void in txtPassword.placeholder = textFieldPlaceholder
+        }
+        alertController.addAction(okAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+        return alertController
+    }
 }
