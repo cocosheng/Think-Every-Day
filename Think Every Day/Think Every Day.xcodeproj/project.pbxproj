@@ -29,6 +29,7 @@
 		CE1C01121DAED860001D55BA /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C01111DAED860001D55BA /* FBSDKCoreKit.framework */; };
 		CE1C01151DAED876001D55BA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C01131DAED876001D55BA /* Bolts.framework */; };
 		CE1C01161DAED876001D55BA /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C01141DAED876001D55BA /* FBSDKShareKit.framework */; };
+		CE509F921E24D28D00488507 /* NotificationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE509F911E24D28D00488507 /* NotificationsTableViewController.swift */; };
 		CE6469521DA193EC00D03D26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6469511DA193EC00D03D26 /* ViewController.swift */; };
 		CE6469561DA2DF3D00D03D26 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6469551DA2DF3D00D03D26 /* SignInViewController.swift */; };
 		CE6469581DA2DF6300D03D26 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6469571DA2DF6300D03D26 /* SignUpViewController.swift */; };
@@ -85,6 +86,7 @@
 		CE1C01131DAED876001D55BA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../../../Documents/FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
 		CE1C01141DAED876001D55BA /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
 		CE1C01171DAED9AB001D55BA /* Think Every Day.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Think Every Day.entitlements"; sourceTree = "<group>"; };
+		CE509F911E24D28D00488507 /* NotificationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsTableViewController.swift; sourceTree = "<group>"; };
 		CE6469511DA193EC00D03D26 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "Think Every Day/ViewController.swift"; sourceTree = SOURCE_ROOT; };
 		CE6469551DA2DF3D00D03D26 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = "Think Every Day/SignInViewController.swift"; sourceTree = SOURCE_ROOT; };
 		CE6469571DA2DF6300D03D26 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = "Think Every Day/SignUpViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -295,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				CE12228F1DB674F8009B65A7 /* SettingsTableViewController.swift */,
+				CE509F911E24D28D00488507 /* NotificationsTableViewController.swift */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				CE12228C1DB67120009B65A7 /* InfoEditViewController.swift in Sources */,
 				CE64695C1DA2E7B200D03D26 /* NotificationViewController.swift in Sources */,
 				CE64695E1DA2E7D900D03D26 /* AccountViewController.swift in Sources */,
+				CE509F921E24D28D00488507 /* NotificationsTableViewController.swift in Sources */,
 				8A7878A41D94752F0062EF79 /* AppDelegate.swift in Sources */,
 				CE12228A1DB66DE2009B65A7 /* AnswerHistoryTableViewController.swift in Sources */,
 				CE92E8531DA1895D00ED3EAE /* Utilities.swift in Sources */,

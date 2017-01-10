@@ -69,7 +69,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDele
             user, error in
             if error != nil {
                 // Password or email address not recognized.
-                self.showErrorAlert(errorTitle: "Sign in unsuccessful", errorMessage: error as! String!)
+                self.showErrorAlert(errorTitle: "Sign in unsuccessful", errorMessage: error?.localizedDescription)
                 NSLog("debug Your password is incorrect.")
                 return
             }

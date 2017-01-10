@@ -31,7 +31,7 @@ class InfoEditViewController: UIViewController {
         let alertMessage = "Please enter your current password"
         let textFieldPlaceholder = "Password"
         let errorMessage = "Password cannot be empty"
-        let alertController = self.showChangeContentAlert(alertTitle: alertTitle, alertMessage: alertMessage, textFieldPlaceholder: textFieldPlaceholder, errorMessage: errorMessage)
+        let alertController = self.showChangeContentAlert(alertTitle: alertTitle, alertMessage: alertMessage, textFieldPlaceholder: textFieldPlaceholder, errorMessage: errorMessage, isResetUserName: 0)
 
     }
     
@@ -40,7 +40,7 @@ class InfoEditViewController: UIViewController {
         let alertMessage = "Please enter your new user name"
         let textFieldPlaceholder = "User Name"
         let errorMessage = "User name cannot be empty"
-        let alertController = self.showChangeContentAlert(alertTitle: alertTitle, alertMessage: alertMessage, textFieldPlaceholder: textFieldPlaceholder, errorMessage: errorMessage)
+        let alertController = self.showChangeContentAlert(alertTitle: alertTitle, alertMessage: alertMessage, textFieldPlaceholder: textFieldPlaceholder, errorMessage: errorMessage, isResetUserName: 1)
     }
 
 }

@@ -34,7 +34,7 @@ class AccountViewController: UIViewController {
 
         let user = FIRAuth.auth()?.currentUser!
         // Placeholder for fb login.
-        if user?.email == nil {
+        if (user?.email == nil) {
             self.usernameLabel.text = "fbLoginUsername"
             return
         }

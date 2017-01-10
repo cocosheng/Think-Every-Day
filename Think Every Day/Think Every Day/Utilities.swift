@@ -8,6 +8,7 @@
 
 //  This class provides new UIViewController functions that might be used throughout the app.
 import UIKit
+import FirebaseAuth
 
 extension UIViewController {
     // Hide keyboard if user finishes typing and tap the screen.
@@ -32,7 +33,8 @@ extension UIViewController {
     }
 
     // Show alert with a text field for input.
-    func showChangeContentAlert(alertTitle: String!, alertMessage: String!, textFieldPlaceholder: String!, errorMessage: String!) -> UIAlertController {
+    // If this function is called to reset User name, isResetUserName is set to 1.
+    func showChangeContentAlert(alertTitle: String!, alertMessage: String!, textFieldPlaceholder: String!, errorMessage: String!, isResetUserName: Int) -> UIAlertController {
         let alertController = UIAlertController(
             title: alertTitle,
             message: alertMessage,
@@ -41,8 +43,28 @@ extension UIViewController {
         // Check whether textField is empty. If empty, show alert to ask user input again.
         let okAction = UIAlertAction(title: "OK", style:UIAlertActionStyle.default, handler: { (_) -> Void in
             let textfield = alertController.textFields!.first!
-            if (textfield.text?.isEmpty)! {
+            let textInput = textfield.text
+            if (textInput?.isEmpty)! {
                 self.showErrorAlert(errorTitle: "Reset unsuccessful", errorMessage: errorMessage)
+            } else if (isResetUserName == 1) {
+                // Check whether username is unchanged.
+                // TODO: for fb logIn.
+                if (FIRAuth.auth()?.currentUser!.email == nil) {
+                    
+                } else if (textInput == FIRAuth.auth()?.currentUser!.email) { // TODO: change to currentUser.username
+                    self.showErrorAlert(errorTitle: "Reset unsuccessful", errorMessage: "Your new username cannot be your old username.")
+                } //TODO: else if () {
+                    // Check whether usename is used by other users.
+                //}
+                else { // Reset successful
+                    self.showAlert(alertTitle: "Reset username", alertMessage: "Reset username successful.", cancelButtonTitle: "OK")
+                    // TODO: reset username.
+                }
+            } else { // Reset Password.
+                // Check whether password is unchanged.
+                // TODO: for fb / google login.
+                FIRAuth.auth()?.currentUser!.updatePassword(textInput!, completion: nil)
+                // TODO: password textfield conceal.
             }
         })
         
