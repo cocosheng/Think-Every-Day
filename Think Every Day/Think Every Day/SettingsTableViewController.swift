@@ -57,7 +57,8 @@ class SettingsTableViewController: UITableViewController {
 
         let row = indexPath.row
         if (row == 0) { // If Notifications cell is selected.
-//            self.performSegue(withIdentifier: "Notifications", sender: self)
+            let destination = self.storyboard?.instantiateViewController(withIdentifier: "Notifications") as! NotificationsTableViewController
+            self.navigationController?.pushViewController(destination, animated: true)
         }
       
     }
@@ -103,6 +104,7 @@ class SettingsTableViewController: UITableViewController {
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        // Get the new view controller using segue.destinationViewController.
 //        // Pass the selected object to the new view controller.
+//        print("debug called")
 //    }
 
 }

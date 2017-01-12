@@ -1075,7 +1075,7 @@
         <!--Notifications Table View Controller-->
         <scene sceneID="BT4-TA-7bZ">
             <objects>
-                <tableViewController id="x8k-B3-PSE" customClass="NotificationsTableViewController" customModule="Think_Every_Day" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Notifications" id="x8k-B3-PSE" customClass="NotificationsTableViewController" customModule="Think_Every_Day" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="wJX-y4-wi4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
