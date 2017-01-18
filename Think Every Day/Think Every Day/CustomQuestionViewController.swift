@@ -69,10 +69,7 @@ class CustomQuestionViewController: UIViewController {
                         "alreadyPosted": false] as [String : Any]
         let childUpdates = ["/questions/\(key)": question]
         databaseRef.updateChildValues(childUpdates)
-        databaseRef.child("questions").child(key).child("answers").setValue(["totalNumber": 0])
-        databaseRef.child("questions").child(key).child("tags").setValue(["totalNumber": 0])
         // todo: update tags/fields adding
-        databaseRef.child("questions").child(key).child("fields").setValue(["totalNumber": 0])
         
         // update user side, need to debug
         //        databaseRef.child("users").child(userID).child("contributedQuestions").observeSingleEvent(of: .value, with: { (snapshot) in

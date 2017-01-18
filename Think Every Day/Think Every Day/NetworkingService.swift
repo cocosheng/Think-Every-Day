@@ -23,9 +23,6 @@ struct NetworkingService {
         // todo: do this for all users with all login methods
         
         databaseRef.child("users").child(user.uid).setValue(["email": email])
-        databaseRef.child("users").child(user.uid).child("answers").setValue(["totalNumber": 0])
-        databaseRef.child("users").child(user.uid).child("questions").setValue(["totalNumber": 0])
-        databaseRef.child("users").child(user.uid).child("contributedQuestions").setValue(["totalNumber": 0])
         
     }
     

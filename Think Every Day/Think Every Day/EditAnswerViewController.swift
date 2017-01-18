@@ -9,6 +9,13 @@
 import UIKit
 
 class EditAnswerViewController: UIViewController {
+    
+    
+    @IBOutlet weak var QuestionLabel: UILabel!
+    @IBOutlet weak var InspirationLabel: UILabel!
+
+    @IBOutlet weak var AnswerTextField: UITextView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +27,16 @@ class EditAnswerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //TODO: update question label and inspiration label
+        // 1. today's question
+    
+        // 2. hot question
+    
+        // 3. custom question
+    
+    //TODO: create answer: content, question, userID, upVote, downVote, key, isAnonymous, isPrivate, tag
+    
+    //TODO: add answer to question, userID, tag
 
     /*
     // MARK: - Navigation
